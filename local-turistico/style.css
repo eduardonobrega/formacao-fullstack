@@ -1,0 +1,135 @@
+:root {
+    font-size: 62.5%;
+
+    --background-default: #f5f4f0;
+    --border-primary: #d9d9d9;
+    /* == text == */
+    --text-primary: #1b1b1b;
+    --text-secondary: #333333;
+    --text-tertiary: #696969;
+    --text-headline: #e1624f;
+    /* ==== */
+    --accent-blue: #0c51a7;
+    --accent-orange: #e95e10;
+    --accent-pink: #e5245e;
+    --accent-purple: #591b98;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+body,
+input,
+button,
+textarea {
+    font: 400 1.6rem "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-variation-settings: "wdth" 100;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    color: var(--text-secondary);
+    min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--text-primary);
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 3.6rem;
+    margin-bottom: 4.4rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+    margin-bottom: .8rem;
+}
+
+h3 {
+    font-size: clamp(2rem, 1.4286rem + 1.7857vw, 2.8rem);
+    text-indent: 1rem;
+
+    margin: 2rem 0 .4rem;
+}
+
+h2 + p {
+    margin-bottom: 6.4rem;
+}
+
+h3 + p {
+    margin-bottom: 3rem;
+}
+
+.headline-text {
+    color: var(--text-headline);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+}
+
+main {
+    width: min(90%, 1120px);
+    margin: 0 auto;
+    padding-top: 8.8rem;
+}
+
+main > p {
+    text-align: center;
+    font-style: italic;
+    margin-top: 2.4rem;
+}
+
+section {
+    margin: 4rem 0;
+    padding: 6.4rem 0 4rem;
+}
+
+.tourist-site + .tourist-site {
+    margin-top: 4.8rem;
+}
+
+.tourist-site > strong {
+    font-weight: 700;
+}
+
+.tourist-site ul {
+    list-style-position: inside;
+    padding-left: 1rem;
+    font-weight: 700;
+}
+
+.tourist-site ul li:nth-child(even) {
+    color: var(--accent-pink);
+}
+
+.tourist-site ul li:nth-child(odd) {
+    color: var(--accent-blue);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .4rem;
+
+    margin: 6.5rem 0 4.8rem;
+}
