@@ -32,4 +32,34 @@ Este é um projeto de uma página web sobre um local turístico, desenvolvido co
 
 &nbsp;
 
+## 2. Desafio prático - Portfólio Dev
+<p>
+  <img src="https://github.com/user-attachments/assets/b22f3301-e973-4c86-9d0a-e6b5ce2b54cd" align="center" />
+</p>
+
+Este é um projeto de um site desktop e mobile de portfólio para desenvolvedores, contendo links para projetos e informações de contato do profissional. O objetivo é criar uma interface moderna e responsiva utilizando técnicas avançadas de CSS.
+
+### 🛠️ Nesse projeto foi utilizado
+
+- `CSS Flexbox`;
+- `CSS Grid`;
+- `Variáveis CSS`;
+- `pseudo-class e pseudo-elements`;
+- `media queries`;
+
+<br />
+
+<a href="https://portifolio-dev-six.vercel.app" target="_blank" class="deploy">
+<img src="https://user-images.githubusercontent.com/71772559/178192066-d52e0cf7-906e-4baa-80f3-4b49dde153c0.png" />
+</a>
+
+<a href="./portifolio-dev" target="_blank" class="code">
+<img src="https://user-images.githubusercontent.com/71772559/178192378-234b9c46-7e31-47fb-8ddf-245617d8b198.png" />
+</a>
+
+<a href="https://www.figma.com/community/file/1387080701963671866/portfolio-dev" target="_blank" class="figma">
+<img src="https://user-images.githubusercontent.com/71772559/178192253-4fe4757c-de57-4878-a38c-a483c25670b1.png" />
+</a>
+
+&nbsp;
 
