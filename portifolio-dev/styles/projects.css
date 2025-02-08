@@ -1,5 +1,5 @@
 #projects {
-    padding-top: 8rem;
+    padding: 8rem 5vw 0;
     > div {
         display: flex;
         justify-content: center;
