@@ -66,6 +66,29 @@ body {
     min-height: 100vh;
 }
 
+h2 {
+    font: var(--title-md);
+    color: var(--gray-600);
+    margin: .8rem 0 5.6rem;
+    text-align: center;
+}
+
+h3 {
+    font: var(--title-sm);
+}
+
+.subtitle {
+    text-align: center;
+    display: block;
+    font: var(--subtitle);
+    color: var(--red);
+}
+
+main {
+    width: 95%;
+    margin: 0 auto;
+}
+
 @media (max-width: 600px) {
     :root {
         font-size: 40%;
