@@ -2,6 +2,8 @@
     background-color: var(--gray-100);
     padding: 10rem 5vw;
     > div {
+        margin-top: 5.6rem;
+
         display: flex;
         flex-wrap: wrap;
         align-items: center;
