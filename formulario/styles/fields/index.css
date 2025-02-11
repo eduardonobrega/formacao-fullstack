@@ -1,0 +1,54 @@
+input {
+    background-color: var(--input-base);
+
+    padding: 1.6rem;
+    border: 1px solid var(--input-stroke);
+    border-radius: 8px;
+    color: var(--text-heading);
+
+    &::placeholder {
+        color: var(--input-placeholder);
+    }
+
+    &:focus {
+        border-color: var(--brand-light);
+        outline: none;
+    }
+
+    &:invalid {
+        border-color: var(--danger);
+    }
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    > label {
+        margin-bottom: 1.2rem;
+    }
+
+    > small {
+        transition: opacity 0.3s ease-in-out;
+        opacity: 0;
+        font: var(--small);
+        color: var(--danger);
+        font-size: 1.2rem;
+        margin-top: 0.8rem;
+
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+
+        img {
+            width: 1.6rem;
+            height: 1.6rem;
+        }
+    }
+
+    &:has(input:invalid) {
+        small {
+            opacity: 1;
+        }
+    }
+}
