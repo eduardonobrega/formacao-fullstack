@@ -1,4 +1,7 @@
-input {
+@import url(button.css);
+
+input,
+textarea {
     background-color: var(--input-base);
 
     padding: 1.6rem;
@@ -18,6 +21,9 @@ input {
     &:invalid {
         border-color: var(--danger);
     }
+    /* &:required:invalid:not(:placeholder-shown) {
+        border-color: var(--danger);
+    } */
 }
 
 .input-wrapper {
