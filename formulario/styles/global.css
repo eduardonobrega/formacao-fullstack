@@ -1,0 +1,91 @@
+:root {
+    font-size: 62.5%;
+
+    /* Fonts */
+    --font-leckerli: "Leckerli One", serif;
+    --font-baloo-2: "Baloo 2", serif;
+    --font-open-sans: "Open Sans", serif;
+
+    --leckerli: 400 4rem / auto var(--font-leckerli);
+
+    --hd-md: 700 2.8rem / auto var(-font-baloo-2);
+    --hd-sm: 700 1.8rem / auto var(-font-baloo-2);
+
+    --text-md-r: 400 1.6rem / auto var(--font-open-sans);
+    --text-md-sb: 600 1.6rem / auto var(--font-open-sans);
+
+    --text-sm-r: 400 1.4rem / auto var(--font-open-sans);
+    --text-sm-sb: 600 1.4rem / auto var(--font-open-sans);
+
+    --text-xs-r: 400 1.2rem / auto var(--font-open-sans);
+    --text-xs-sb: 600 1.2rem / auto var(--font-open-sans);
+
+    /* Colors */
+
+    /* Brand */
+    --brand-light: #59b2ff;
+    --brand-mid: #3487cf;
+    --brand-dark: #1d6fb6;
+
+    /* Accent Colors */
+    --purple: #b259ff;
+    --fuschia: #ff59f9;
+    --pink: #ff598b;
+    --orange: #ff8b59;
+    --yellow: #ffcd59;
+    --lime: #e1ff59;
+    --green: #59ff91;
+    --cyan: #59fff9;
+    --navy: #6a59ff;
+
+    /* Feedback */
+    --danger: #ff5959;
+
+    /* Input */
+    --input-base: #1c1f21;
+    --input-stroke: #363b40;
+    --input-placeholder: #869198;
+
+    /* Shape */
+    --shape-background: #131516;
+    --shape-body: #212427;
+    --shape-button: #2d3136;
+    --shape-hover: #383d42;
+
+    /* Text */
+    --text-body: #c8cdd0;
+    --text-heading: #f9f9f9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+body,
+input,
+button,
+textarea {
+    font: var(--text-md-r);
+    font-optical-sizing: auto;
+    font-variation-settings: "wdth" 100;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    background-color: var(--shape-background);
+    color: var(--text-body);
+    min-height: 100vh;
+}
