@@ -1,4 +1,6 @@
 @import url(button.css);
+@import url(upload.css);
+@import url(switch.css);
 
 input,
 textarea {
@@ -30,8 +32,9 @@ textarea {
     display: flex;
     flex-direction: column;
 
-    > label {
+    > label:first-child {
         margin-bottom: 1.2rem;
+        width: fit-content;
     }
 
     > small {
