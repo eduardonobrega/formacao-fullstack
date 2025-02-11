@@ -6,19 +6,20 @@
     --font-baloo-2: "Baloo 2", serif;
     --font-open-sans: "Open Sans", serif;
 
-    --leckerli: 400 4rem / auto var(--font-leckerli);
+    --leckerli: 400 4rem / normal var(--font-leckerli);
 
-    --hd-md: 700 2.8rem / auto var(-font-baloo-2);
-    --hd-sm: 700 1.8rem / auto var(-font-baloo-2);
+    --hd-md: 700 2.8rem / normal var(--font-baloo-2);
+    --hd-sm: 700 1.8rem / normal var(--font-baloo-2);
 
-    --text-md-r: 400 1.6rem / auto var(--font-open-sans);
-    --text-md-sb: 600 1.6rem / auto var(--font-open-sans);
+    --small: 400 1.2rem / normal var(--font-open-sans);
+    --text-md-r: 400 1.6rem / normal var(--font-open-sans); /* default */
+    --text-md-sb: 600 1.6rem / normal var(--font-open-sans);
 
-    --text-sm-r: 400 1.4rem / auto var(--font-open-sans);
-    --text-sm-sb: 600 1.4rem / auto var(--font-open-sans);
+    --text-sm-r: 400 1.4rem / normal var(--font-open-sans);
+    --text-sm-sb: 600 1.4rem / normal var(--font-open-sans);
 
-    --text-xs-r: 400 1.2rem / auto var(--font-open-sans);
-    --text-xs-sb: 600 1.2rem / auto var(--font-open-sans);
+    --text-xs-r: 400 1.2rem / normal var(--font-open-sans);
+    --text-xs-sb: 600 1.2rem / normal var(--font-open-sans);
 
     /* Colors */
 
@@ -47,13 +48,13 @@
     --input-placeholder: #869198;
 
     /* Shape */
-    --shape-background: #131516;
+    --shape-background: #131516; /* default */
     --shape-body: #212427;
     --shape-button: #2d3136;
     --shape-hover: #383d42;
 
     /* Text */
-    --text-body: #c8cdd0;
+    --text-body: #c8cdd0; /* default */
     --text-heading: #f9f9f9;
 }
 
