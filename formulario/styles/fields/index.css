@@ -4,6 +4,7 @@
 @import url(checkbox.css);
 @import url(color-selection.css);
 @import url(theme.css);
+@import url(segmented-control.css);
 
 input,
 textarea {
