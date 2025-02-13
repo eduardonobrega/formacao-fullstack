@@ -430,29 +430,59 @@
                         </div>
                     </div>
                 </fieldset>
-                
-                <!-- <div class="input-wrapper">
-                <label for="input">Label</label>
-                <input type="number" name="" id="" max="3" />
-                <small>
-                    <img
-                        src="./assets/icons/circle-alert.svg"
-                        alt="Simbolo de alerta"
-                    />
-                    Error message
-                </small>
-            </div> -->
 
-                <!-- -->
+                <fieldset id="contact">
+                    <legend>
+                        <img src="./assets/icons/contact.svg" alt="Contato" />
+                        Dados para contato
+                    </legend>
 
-                <!--  -->
+                    <div class="input-wrapper">
+                        <label for="name">Nome</label>
+                        <input
+                            type="text"
+                            name="name"
+                            id="name"
+                            required
+                            placeholder="Nome completo"
+                        />
+                        <small>
+                            <img
+                                src="./assets/icons/circle-alert.svg"
+                                alt="Simbolo de alerta"
+                            />
+                            Campo obrigatório
+                        </small>
+                    </div>
+
+                    <div class="two-columns">
+                        <div class="input-wrapper">
+                            <label for="email">E-mail</label>
+                            <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                placeholder="exemplo@email.com"
+                            />
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="tel">Telefone</label>
+                            <input
+                                type="tel"
+                                name="tel"
+                                id="tel"
+                                placeholder="(99) 99999-9999"
+                                inputmode="numeric"
+                            />
+                        </div>
+                    </div>
+                </fieldset>
 
                 <!-- <div class="checkbox">
                 <input type="checkbox" name="check" id="check" />
                 <label for="check">Text</label>
             </div> -->
-
-                <!--  -->
             </form>
         </main>
         <script>
