@@ -32,15 +32,18 @@
         background-color: var(--brand-light);
 
         input {
-            border-color: var(--shape-hover);   
+            border-color: var(--shape-hover);
         }
     }
 }
 
 .color-selection {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1.2rem;
+    > div {
+        margin-top: 1.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.2rem;
+    }
 }
