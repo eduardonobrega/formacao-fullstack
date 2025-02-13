@@ -3,6 +3,7 @@
 @import url(switch.css);
 @import url(checkbox.css);
 @import url(color-selection.css);
+@import url(theme.css);
 
 input,
 textarea {
