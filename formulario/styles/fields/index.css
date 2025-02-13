@@ -6,11 +6,21 @@
 @import url(theme.css);
 @import url(segmented-control.css);
 
+input {
+    height: 4.8rem;
+    padding: 1.3rem 1.6rem;
+}
+
+textarea {
+    padding: 1.6rem;
+    min-height: 13.6rem;
+    resize: vertical;
+}
+
 input,
 textarea {
     background-color: var(--input-base);
 
-    padding: 1.6rem;
     border: 1px solid var(--input-stroke);
     border-radius: 8px;
     color: var(--text-heading);
@@ -39,6 +49,7 @@ textarea {
 .input-wrapper {
     display: flex;
     flex-direction: column;
+    flex: 1;
 
     > label:first-child {
         margin-bottom: 1.2rem;

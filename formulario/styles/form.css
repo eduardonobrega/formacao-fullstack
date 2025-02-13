@@ -1,0 +1,57 @@
+form {
+    max-width: 56rem;
+
+    fieldset {
+        border: 0;
+
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+        margin-bottom: 4.8rem;
+        &#personalization {
+            gap: 2.8rem;
+
+            > div:last-child {
+                display: grid;
+                grid-template-columns: max-content 1fr;
+                gap: 1.6rem;
+
+                #photo {
+                    justify-self: end;
+                }
+            }
+        }
+        legend {
+            font: var(--hd-sm);
+            color: var(--text-heading);
+            margin-bottom: 2.4rem;
+
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+
+            img {
+                width: 2.4rem;
+                height: 2.4rem;
+            }
+        }
+    }
+}
+
+input[type="datetime-local"] {
+    &:empty {
+        color: var(--input-placeholder);
+    }
+    &:focus {
+        color: var(--text-heading);
+    }
+
+    &::-webkit-calendar-picker-indicator {
+        opacity: 0;
+    }
+}
+
+.two-columns {
+    display: flex;
+    gap: 1.6rem;
+}
