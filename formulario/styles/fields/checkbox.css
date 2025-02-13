@@ -7,10 +7,6 @@
         font: var(--text-sm-r);
     }
     input {
-        appearance: none;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-
         width: 2rem;
         height: 2rem;
         border-radius: 4px;

@@ -2,6 +2,7 @@
 @import url(upload.css);
 @import url(switch.css);
 @import url(checkbox.css);
+@import url(color-selection.css);
 
 input,
 textarea {
@@ -11,6 +12,10 @@ textarea {
     border: 1px solid var(--input-stroke);
     border-radius: 8px;
     color: var(--text-heading);
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 
     &::placeholder {
         color: var(--input-placeholder);
