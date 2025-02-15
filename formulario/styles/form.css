@@ -20,6 +20,12 @@ form {
                 #photo {
                     justify-self: end;
                 }
+
+                @media (max-width: 600px) {
+                    display: flex;
+                    flex-direction: column;
+                    
+                }
             }
         }
 
@@ -65,5 +71,6 @@ input[type="datetime-local"] {
 
 .two-columns {
     display: flex;
+    flex-wrap: wrap;
     gap: 1.6rem;
 }
