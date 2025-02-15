@@ -5,6 +5,11 @@
 
     label {
         font: var(--text-sm-r);
+
+        a {
+            color: var(--brand-light);
+            font-weight: 600;
+        }
     }
     input {
         width: 2rem;
