@@ -8,6 +8,7 @@ form {
         flex-direction: column;
         gap: 1.6rem;
         margin-bottom: 4.8rem;
+
         &#personalization {
             gap: 2.8rem;
 
@@ -21,6 +22,13 @@ form {
                 }
             }
         }
+
+        &#boxes {
+            border-top: 1px solid var(--input-stroke);
+            gap: 1.2rem;
+            padding-top: 4rem;
+        }
+
         legend {
             font: var(--hd-sm);
             color: var(--text-heading);
@@ -35,6 +43,10 @@ form {
                 height: 2.4rem;
             }
         }
+    }
+
+    > button {
+        margin-left: auto;
     }
 }
 
