@@ -1,0 +1,14 @@
+.link {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: var(--blue-light);
+    font: var(--link);
+
+    transition: color 300ms ease;
+    &:hover,
+    &:focus {
+        color: var(--text-body);
+    }
+}
