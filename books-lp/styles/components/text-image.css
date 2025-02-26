@@ -1,0 +1,9 @@
+.text-image {
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+    transition: transform 400ms ease-in-out;
+    &:hover {
+        transform: scale(1.1) rotate(20deg);
+    }
+}
