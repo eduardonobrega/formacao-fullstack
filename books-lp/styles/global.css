@@ -4,11 +4,12 @@
     --font-family: "Raleway", sans-serif;
 
     /* Titles */
-    --title-lg: 700 clamp(2.8rem, 2.0958rem + 1.8779vw, 4.8rem) / auto
+    --title-lg: 700 clamp(2.8rem, 2.0958rem + 1.8779vw, 4.8rem)
         var(--font-family);
-    --title-md: 700 4rem / auto var(--font-family);
-    --title-sm: 700 clamp(2.4rem, 2.1183rem + 0.7512vw, 3.2rem) / auto var(--font-family);
-    --title-xs: 700 1.6rem / auto var(--font-family);
+    --title-md: 700 4rem var(--font-family);
+    --title-sm: 700 clamp(2.4rem, 2.1183rem + 0.7512vw, 3.2rem)
+        var(--font-family);
+    --title-xs: 700 1.6rem var(--font-family);
 
     /* Subtitle */
     --subtitle: 500 clamp(1.6rem, 1.0366rem + 1.5023vw, 3.2rem) / 2
@@ -29,13 +30,13 @@
     --body-xs-bold: 700 1.2rem/1.4 var(--font-family);
 
     /* Button */
-    --button: 700 1.4rem / auto var(--font-family);
+    --button: 700 1.4rem var(--font-family);
 
     /* Link */
-    --link: 500 1.4rem / auto var(--font-family);
+    --link: 500 1.4rem var(--font-family);
 
     /* Tag */
-    --tag: 700 1rem / auto var(--font-family);
+    --tag: 700 1rem var(--font-family);
     --tag-letter-spacing: 0.5rem;
     --tag-text-transform: uppercase;
 
