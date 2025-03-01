@@ -92,3 +92,34 @@ Este projeto envolve a criação de um formulário de cadastro de usuário, enfa
 </a>
 
 &nbsp;
+
+## 4. Desafio prático - LP clube de assinatura
+<p>
+  <img src="https://github.com/user-attachments/assets/bfbff227-ef6b-4a13-9d76-96897e5a01bb" align="center" />
+</p>
+
+Este projeto consiste na criação de uma Landing Page para um clube de assinatura de livros, com foco em atrair novos assinantes e apresentar os benefícios do serviço. A página é responsiva e busca proporcionar uma experiência agradável ao usuário, destacando as principais vantagens de se tornar um membro do clube.
+
+
+### 🛠️ Nesse projeto foi utilizado
+
+- `HTML`;
+- `CSS `;
+- `CSS Animations; `;
+- `CSS Transitions; `;
+- `CSS Functions `;
+- `Responsividade `;
+
+<br />
+
+<a href="https://clube-de-assinatura.vercel.app/" target="_blank" class="deploy">
+<img src="https://user-images.githubusercontent.com/71772559/178192066-d52e0cf7-906e-4baa-80f3-4b49dde153c0.png" />
+</a>
+
+<a href="./books-lp" target="_blank" class="code">
+<img src="https://user-images.githubusercontent.com/71772559/178192378-234b9c46-7e31-47fb-8ddf-245617d8b198.png" />
+</a>
+
+<a href="https://www.figma.com/community/file/1394686421442995256" target="_blank" class="figma">
+<img src="https://user-images.githubusercontent.com/71772559/178192253-4fe4757c-de57-4878-a38c-a483c25670b1.png" />
+</a>
