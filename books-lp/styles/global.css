@@ -20,7 +20,8 @@
         var(--font-family);
     --body-lg-bold: 700 2rem/1.4 var(--font-family);
 
-    --body-md: 400 1.6rem/1.4 var(--font-family);
+    --body-md: 400 clamp(1.4rem, 1.2993rem + 0.2685vw, 1.6rem) / 1.4
+        var(--font-family);
     --body-md-bold: 700 1.6rem/1.4 var(--font-family);
 
     --body-sm: 400 1.4rem/1.4 var(--font-family);

@@ -1,0 +1,7 @@
+#subscription {
+    h2 {
+        text-align: center;
+        font: var(--title-sm);
+        margin-bottom: 10rem;
+    }
+}
