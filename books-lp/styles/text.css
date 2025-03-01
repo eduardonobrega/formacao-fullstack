@@ -1,0 +1,30 @@
+#text {
+    width: min(95%, 1200px);
+    margin-inline: auto;
+    position: relative;
+    margin-top: clamp(3.2rem, -0.0215rem + 8.5906vw, 9.6rem);
+    margin-bottom: clamp(0rem, -4.0268rem + 10.7383vw, 8rem);
+    padding-top: clamp(8.1rem, 6.4389rem + 4.4295vw, 11.4rem);
+    padding-bottom: clamp(8.1rem, 4.2242rem + 10.3356vw, 15.8rem);
+
+    p {
+        text-align: center;
+        font: var(--subtitle);
+        width: min(95%, 60ch);
+        margin: 0 auto;
+        strong {
+            color: var(--blue-light);
+            font-weight: 700;
+        }
+    }
+    img {
+        position: absolute;
+    }
+    img:nth-of-type(1) {
+        right: 0;
+    }
+    img:nth-of-type(2) {
+        top: 0;
+        right: 48%;
+    }
+}

@@ -1,6 +1,6 @@
 .text-image {
-    width: 8rem;
-    height: 8rem;
+    width: clamp(4rem, 1.9866rem + 5.3691vw, 8rem);
+    height: clamp(4rem, 1.9866rem + 5.3691vw, 8rem);
     object-fit: cover;
     transition: transform 400ms ease-in-out;
     &:hover {
