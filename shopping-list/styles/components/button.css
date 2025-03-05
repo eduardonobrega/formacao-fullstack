@@ -1,0 +1,16 @@
+.btn {
+    font: var(--label);
+    color: var(--always-white);
+    background-color: var(--brand);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 12px;
+    padding: 1rem 2.4rem;
+
+    &:hover,
+    &:focus {
+        background-color: var(--brand-hover);
+    }
+}
