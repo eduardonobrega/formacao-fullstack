@@ -1,0 +1,70 @@
+:root {
+    font-size: 62.5%;
+
+    --font-family: "Inter", sans-serif;
+    --title: 700 2.4rem/3.2rem var(--font-family);
+    --label: 600 1.6rem/2rem var(--font-family);
+    --paragraph: 500 1.6rem/2rem var(--font-family);
+    --link: 500 1.4rem /1.6rem var(--font-family);
+
+    /* Background */
+    --bg-primary: #f4f5fb;
+    --bg-secondary: ##fff;
+
+    /* Colors */
+    --brand: #ca3884;
+    --brand-hover: #a52c6b;
+    --danger: #c93847;
+
+    /* Content */
+    --content-primary: #080b12;
+    --content-secondary: #374151;
+    --content-tertiary: #9ca3af;
+    --always-white: #ffffff;
+
+    /* Border */
+    --border-primary: #d1d5db;
+    --border-hover: #b9c2d0;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+body,
+input,
+button,
+textarea {
+    font: var(--paragraph);
+    font-optical-sizing: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--content-primary);
+    min-height: 100vh;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul[role="list"] {
+    list-style: none;
+}
