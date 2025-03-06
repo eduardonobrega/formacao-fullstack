@@ -4,6 +4,7 @@
 
     > label {
         font: var(--paragraph);
+        text-transform: capitalize;
         cursor: pointer;
         background-color: var(--bg-secondary);
         border-radius: 12px;
@@ -14,12 +15,13 @@
 
         justify-content: space-between;
 
+        border: 2px solid var(--bg-secondary);
         &:focus-within {
-            outline: 2px solid var(--brand);
+            border-color: var(--brand);
         }
 
         &:has(input:checked) {
-            opacity: 0.8 ;
+            opacity: 0.8;
             span {
                 opacity: 0.5;
                 text-decoration: line-through;

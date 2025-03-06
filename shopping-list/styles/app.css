@@ -58,7 +58,7 @@ main {
         flex-direction: column;
         gap: 1.2rem;
         overflow-y: scroll;
-        max-height: calc((48px + 12px) * 5 + 12px);
+        max-height: calc((52px + 12px) * 5 + 12px);
 
         padding-right: 1rem;
 
