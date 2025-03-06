@@ -1,16 +1,9 @@
-body {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-}
-
 header {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    margin: 2.5rem 0 6.2rem;
+    padding: 2.5rem 0 6.2rem;
 }
 
 main {
@@ -68,7 +61,7 @@ main {
         max-height: calc((48px + 12px) * 5 + 12px);
 
         padding-right: 1rem;
-        
+
         &::-webkit-scrollbar {
             width: 1rem;
         }

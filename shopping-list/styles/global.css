@@ -60,6 +60,7 @@ textarea {
 body {
     background-color: var(--bg-primary);
     min-height: 100vh;
+    padding-bottom: 2rem;
 }
 
 a {
@@ -69,4 +70,11 @@ a {
 
 ul[role="list"] {
     list-style: none;
+}
+
+@media (max-height: 700px) {
+    :root {
+        font-size: 50%;
+    }
+
 }
