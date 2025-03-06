@@ -1,5 +1,5 @@
 .text-field {
-    background-color: transparent;
+    background-color: var(--bg-secondary);
     outline: none;
     border-radius: 12px;
     border: 2px solid var(--border-primary);
