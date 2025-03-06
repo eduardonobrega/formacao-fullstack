@@ -13,8 +13,8 @@ Este projeto consiste em uma página web sobre um local turístico, desenvolvida
 
 ### 🛠️ Nesse projeto foi utilizado
 
-- `HTML`;
-- `CSS`;
+🔹 HTML
+🔹 CSS
 
 <br />
 
@@ -41,11 +41,8 @@ Este projeto apresenta um site de portfólio para desenvolvedores, disponível e
 
 ### 🛠️ Nesse projeto foi utilizado
 
-- `CSS Flexbox`;
-- `CSS Grid`;
-- `Variáveis CSS`;
-- `pseudo-class e pseudo-elements`;
-- `media queries`;
+🔹 HTML
+🔹 CSS
 
 <br />
 
@@ -73,9 +70,9 @@ Este projeto envolve a criação de um formulário de cadastro de usuário, enfa
 
 ### 🛠️ Nesse projeto foi utilizado
 
-- `HTML`;
-- `CSS `;
-- `JavaScript`;
+🔹 HTML
+🔹 CSS
+🔹 JavaScript
 
 <br />
 
@@ -93,33 +90,35 @@ Este projeto envolve a criação de um formulário de cadastro de usuário, enfa
 
 &nbsp;
 
-## 4. Desafio prático - LP clube de assinatura
+## 4. Desafio prático - App de lista de compras
 <p>
-  <img src="https://github.com/user-attachments/assets/bfbff227-ef6b-4a13-9d76-96897e5a01bb" align="center" />
+  <img src="https://github.com/user-attachments/assets/fce01ef3-27e3-4412-bcbf-6b037e440b4d" align="center" />
 </p>
 
-Este projeto consiste na criação de uma Landing Page para um clube de assinatura de livros, com foco em atrair novos assinantes e apresentar os benefícios do serviço. A página é responsiva e busca proporcionar uma experiência agradável ao usuário, destacando as principais vantagens de se tornar um membro do clube.
+Uma aplicação de lista de compras desenvolvida para auxiliar na organização de itens a serem adquiridos. Permite adicionar, editar, remover e marcar itens como comprados, oferecendo uma interface simples e minimalista.
 
+### ✨ Funcionalidades
+- ✅ Adicionar itens à lista de compras.
+- ✔️ Marcar itens como comprados ou não comprados.
+- ❌ Remover itens da lista.
+- 📱 Interface responsiva para dispositivos móveis, tablets e desktops.
 
 ### 🛠️ Nesse projeto foi utilizado
 
-- `HTML`;
-- `CSS `;
-- `CSS Animations; `;
-- `CSS Transitions; `;
-- `CSS Functions `;
-- `Responsividade `;
+🔹 HTML
+🔹 CSS
+🔹 JavaScript
 
 <br />
 
-<a href="https://clube-de-assinatura.vercel.app/" target="_blank" class="deploy">
+<a href="https://quick-list-omega.vercel.app/" target="_blank" class="deploy">
 <img src="https://user-images.githubusercontent.com/71772559/178192066-d52e0cf7-906e-4baa-80f3-4b49dde153c0.png" />
 </a>
 
-<a href="./books-lp" target="_blank" class="code">
+<a href="./shopping-list" target="_blank" class="code">
 <img src="https://user-images.githubusercontent.com/71772559/178192378-234b9c46-7e31-47fb-8ddf-245617d8b198.png" />
 </a>
 
-<a href="https://www.figma.com/community/file/1394686421442995256" target="_blank" class="figma">
+<a href="https://www.figma.com/community/file/1397279978314668489" target="_blank" class="figma">
 <img src="https://user-images.githubusercontent.com/71772559/178192253-4fe4757c-de57-4878-a38c-a483c25670b1.png" />
 </a>
