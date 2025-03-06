@@ -21,6 +21,10 @@
         }
     }
 
+    &.hide {
+        display: none;
+    }
+
     button {
         background: none;
         border: none;
@@ -34,3 +38,4 @@
         }
     }
 }
+
