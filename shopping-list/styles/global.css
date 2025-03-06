@@ -2,14 +2,15 @@
     font-size: 62.5%;
 
     --font-family: "Inter", sans-serif;
-    --title: 700 2.4rem/3.2rem var(--font-family);
-    --label: 600 1.6rem/2rem var(--font-family);
-    --paragraph: 500 1.6rem/2rem var(--font-family);
-    --link: 500 1.4rem /1.6rem var(--font-family);
+    --default: 400 1.6rem /1.4 var(--font-family);
+    --title: 700 2.4rem/1.33 var(--font-family);
+    --label: 600 1.6rem/1.25 var(--font-family);
+    --paragraph: 500 1.6rem/1.5 var(--font-family);
+    --link: 500 1.4rem /1.14 var(--font-family);
 
     /* Background */
     --bg-primary: #f4f5fb;
-    --bg-secondary: ##fff;
+    --bg-secondary: #fff;
 
     /* Colors */
     --brand: #ca3884;
@@ -48,7 +49,9 @@ body,
 input,
 button,
 textarea {
-    font: var(--paragraph);
+    color: var(--content-primary);
+
+    font: var(--default);
     font-optical-sizing: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -56,7 +59,6 @@ textarea {
 
 body {
     background-color: var(--bg-primary);
-    color: var(--content-primary);
     min-height: 100vh;
 }
 
