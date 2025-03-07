@@ -7,7 +7,7 @@ const alertDescription = alertBox.querySelector("span");
 
 function showAlert(itemName) {
     alertBox.classList.remove("hide");
-    
+
     alertDescription.textContent = `${itemName} foi removido da lista`;
 
     const timeout = setTimeout(() => {
@@ -101,13 +101,6 @@ function updateItemView() {
 }
 
 function addNewItem(item) {
-    item = String(item).toLowerCase();
-    const itemOnList = itens.some((obj) => obj.item === item);
-
-    if (itemOnList) {
-        return alert(`${item} já foi adicionado`);
-    }
-
     itens.unshift({ item, checked: false });
     updateItemView();
     updateItensLocal();
@@ -120,13 +113,44 @@ function removeItem(itemRemoved) {
     showAlert(itemRemoved);
 }
 
-function handleSubmit() {
-    const newItem = input.value;
-    if (!newItem) {
-        return alert("Informe um item!");
+function validateInput(input) {
+    // Campo não vazio
+    if (!input) {
+        alert("Informe um item!");
+        return false;
     }
-    input.value = "";
-    addNewItem(newItem);
+
+    // Apenas caracteres válidos
+    if (!/^[a-zA-ZÀ-ÿ0-9\s,.()-]+$/.test(input)) {
+        alert("O item contém caracteres inválidos!");
+        return false;
+    }
+
+    // Tamanho mínimo e máximo:
+    if (input.length < 2 || input.length > 50) {
+        alert("O item deve ter entre 2 e 50 caracteres.");
+        return false;
+    }
+
+    // Evitar itens duplicados:
+    input = String(input).toLowerCase();
+    const itemOnList = itens.some((obj) => obj.item === input);
+
+    if (itemOnList) {
+        alert(`${input} já foi adicionado`);
+        return false;
+    }
+
+    return true;
+}
+
+function handleSubmit() {
+    let newItem = input.value.trim().replace(/\s+/g, " "); // Remove espaços extras
+
+    if (validateInput(newItem)) {
+        input.value = "";
+        addNewItem(newItem.toLowerCase());
+    }
 }
 
 document.querySelector("form").addEventListener("submit", (event) => {
