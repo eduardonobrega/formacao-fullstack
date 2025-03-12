@@ -16,15 +16,16 @@
 
         input {
             background-color: var(--background-tertiary);
+            border-color: var(--content-brand);
         }
     }
 
     input {
         font: var(--font-input);
         color: var(--content-primary);
-        border: none;
+        border: 1px solid var(--background-secondary);
         outline: none;
-        background-color: transparent;
+        background-color: var(--background-secondary);
         text-align: center;
         border-radius: 8px;
         appearance: none;
