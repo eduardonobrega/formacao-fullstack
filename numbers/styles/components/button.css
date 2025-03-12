@@ -1,0 +1,26 @@
+.btn {
+    font: var(--font-button);
+    color: var(--contente-primary);
+    background: var(--background-tertiary);
+    text-decoration: none;
+    text-transform: uppercase;
+
+    display: block;
+    cursor: pointer;
+    outline: none;
+    border-radius: 8px;
+    border: 1.6px solid var(--background-tertiary);
+
+    padding: 1.6rem;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+
+    &:hover,
+    &:focus {
+        border-color: var(--content-brand);
+    }
+}
