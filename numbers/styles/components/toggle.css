@@ -1,0 +1,56 @@
+.switch-toggle {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    cursor: pointer;
+    &::after {
+        content: "Repetir números";
+    }
+
+    &:has(#repeat:checked) {
+        &::after {
+            content: "Não repetir números";
+        }
+    }
+
+    #repeat {
+        display: none;
+    }
+
+    .switch {
+        background-color: var(--content-tertiary);
+        border: 1px solid black;
+        border-radius: 999px;
+        cursor: pointer;
+
+        width: 3rem;
+        height: 2rem;
+        padding: 3px;
+        position: relative;
+
+        display: flex;
+        align-items: center;
+
+        transition: all 0.3s ease-in-out;
+    }
+
+    .slider {
+        background-color: #fff;
+
+        border-radius: 50%;
+
+        width: 1.4rem;
+        height: 1.4rem;
+        position: absolute;
+
+        transition: all 0.3s ease-in-out;
+    }
+
+    #repeat:checked ~ .switch {
+        background-image: var(--gradient-background);
+    }
+
+    #repeat:checked ~ .switch .slider {
+        transform: translateX(8px);
+    }
+}
