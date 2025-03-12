@@ -8,17 +8,23 @@
     --font-family-roboto-flex: "Roboto Flex", sans-serif;
 
     /* Display */
-    --font-display: 800 clamp(3.2rem, 1.6016rem + 4.0984vw, 7.2rem) / 1.3 var(--font-family-sora);
-    --font-weight-small: 700;
+    --h1: 800 clamp(4rem, 2.7213rem + 3.2787vw, 7.2rem) / 1.3 var(--font-family-sora);
+    --font-input: 700 3.2rem / 1.5 var(--font-family-sora);
+    --font-logo: 800 2.4rem / 1.3 var(--font-family-sora);
 
     /* Overline */
     --font-overline: 700 1.6rem/1.5 var(--font-family-roboto-mono);
+    --font-numbers-result: 700 4.8rem/1.5 var(--font-family-roboto-mono);
 
     /* Paragraph */
-    --font-paragraph: 500 clamp(1.2rem, 1.0402rem + 0.4098vw, 1.6rem) / 1.5 var(--font-family-roboto-flex);
+    --font-paragraph: 500 clamp(1.4rem, 1.3201rem + 0.2049vw, 1.6rem) / 1.5 var(--font-family-roboto-flex);
+    --h2: 700 2rem / 1.5 var(--font-family-roboto-flex);
+    --h3: 500 1.4rem / 1.5 var(--font-family-roboto-flex);
+    --font-paragraph-small: 500 1.2rem / 1.5 var(--font-family-roboto-flex);
 
     /* Labels */
     --font-label: 700 clamp(1.6rem, 1.4402rem + 0.4098vw, 2rem) / 1.5 var(--font-family-roboto-flex);
+    --font-button: 700 1.6rem / 1.5 var(--font-family-roboto-flex);
 
     /* Colors */
     --content-primary: #fff;
@@ -85,10 +91,10 @@ textarea {
 body {
     color: var(--content-primary);
     background-color: var(--background-primary);
-    background-image: url(../assets/bg.jpg);
-
+    /* background-image: url(../assets/bg.jpg); */
+    /* background-repeat: repeat-x;
+    background-position: center   bottom; */
     min-height: 100vh;
-    background-position: center;
 }
 
 a {
@@ -98,4 +104,16 @@ a {
 
 ul[role="list"] {
     list-style: none;
+}
+
+h1 {
+    font: var(--h1);
+}
+
+h2 {
+    font: var(--h2);
+}
+
+h3 {
+    font: var(--h3);
 }
