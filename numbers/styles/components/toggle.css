@@ -3,8 +3,11 @@
     align-items: center;
     gap: 1.2rem;
     cursor: pointer;
+    width: fit-content;
     &::after {
         content: "Repetir números";
+
+        font: 400 1.2rem / 1.5 "Inter", sans-serif;
     }
 
     &:has(#repeat:checked) {
