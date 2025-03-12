@@ -83,7 +83,12 @@ textarea {
 }
 
 body {
+    color: var(--content-primary);
+    background-color: var(--background-primary);
+    background-image: url(../assets/bg.jpg);
+
     min-height: 100vh;
+    background-position: center;
 }
 
 a {
