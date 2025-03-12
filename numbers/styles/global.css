@@ -23,8 +23,7 @@
     --font-paragraph-small: 500 1.2rem / 1.5 var(--font-family-roboto-flex);
 
     /* Labels */
-    --font-label: 700 clamp(1.6rem, 1.4402rem + 0.4098vw, 2rem) / 1.5 var(--font-family-roboto-flex);
-    --font-button: 700 1.6rem / 1.5 var(--font-family-roboto-flex);
+    --font-label: 700 1.6rem / 1.5 var(--font-family-roboto-flex);
 
     /* Colors */
     --content-primary: #fff;

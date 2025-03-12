@@ -61,6 +61,7 @@ header {
         font: var(--font-overline);
         text-transform: uppercase;
         background-image: var(--gradient-content); /* Gradiente de cores */
+        background-clip: text;
         -webkit-background-clip: text; /* Aplica o gradiente no texto */
         color: transparent; /* Torna a cor do texto transparente para ver o gradiente */
     }

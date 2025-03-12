@@ -1,5 +1,5 @@
 .btn {
-    font: var(--font-button);
+    font: var(--font-label);
     color: var(--contente-primary);
     background: var(--background-tertiary);
     text-decoration: none;
