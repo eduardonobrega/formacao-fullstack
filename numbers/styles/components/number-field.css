@@ -1,0 +1,41 @@
+.number-field {
+    font: var(--font-label);
+    color: var(--content-secondary);
+    text-transform: uppercase;
+
+    width: 8.6rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+
+    &:hover,
+    &:focus-within {
+        color: var(--content-brand);
+
+        input {
+            background-color: var(--background-tertiary);
+        }
+    }
+
+    input {
+        font: var(--font-input);
+        color: var(--content-primary);
+        border: none;
+        outline: none;
+        background-color: transparent;
+        text-align: center;
+        border-radius: 8px;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: textfield;
+
+        width: 100%;
+        padding: 0.4rem 0.8rem;
+
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }
+    }
+}
