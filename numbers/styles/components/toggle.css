@@ -5,18 +5,12 @@
     cursor: pointer;
     width: fit-content;
     &::after {
-        content: "Repetir números";
+        content: "Não repetir números";
 
         font: 400 1.2rem / 1.5 "Inter", sans-serif;
     }
 
-    &:has(#repeat:checked) {
-        &::after {
-            content: "Não repetir números";
-        }
-    }
-
-    #repeat {
+    #notRepeat {
         display: none;
     }
 
@@ -49,11 +43,11 @@
         transition: all 0.3s ease-in-out;
     }
 
-    #repeat:checked ~ .switch {
+    #notRepeat:checked ~ .switch {
         background-image: var(--gradient-background);
     }
 
-    #repeat:checked ~ .switch .slider {
+    #notRepeat:checked ~ .switch .slider {
         transform: translateX(8px);
     }
 }

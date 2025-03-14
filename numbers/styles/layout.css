@@ -134,6 +134,20 @@ main {
                 align-items: center;
             }
         }
+
+        #back {
+            border: none;
+            background-color: transparent;
+            margin-top: 2rem;
+            color: var(--content-brand);
+            cursor: pointer;
+
+            font-size: 2rem;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 }
 

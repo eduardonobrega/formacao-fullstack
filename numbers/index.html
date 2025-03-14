@@ -12,7 +12,7 @@
         />
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="styles/index.css" />
-        <script src="main.js" defer></script>
+        <script type="module" src="scripts/main.js"></script>
         <title>Numbers - Sorteador de Números</title>
     </head>
     <body>
@@ -38,25 +38,11 @@
                     <form>
                         <fieldset>
                             <div class="number-field">
-                                <label for="teste">números</label>
+                                <label for="min">de</label>
                                 <input
                                     type="number"
-                                    name="teste"
-                                    id="teste"
-                                    inputmode="numeric"
-                                    min="0"
-                                    max="50"
-                                    value="2"
-                                    required
-                                />
-                            </div>
-
-                            <div class="number-field">
-                                <label for="teste">de</label>
-                                <input
-                                    type="number"
-                                    name="teste"
-                                    id="teste"
+                                    name="min"
+                                    id="min"
                                     inputmode="numeric"
                                     min="0"
                                     max="1000"
@@ -65,23 +51,36 @@
                                 />
                             </div>
                             <div class="number-field">
-                                <label for="teste">até </label>
+                                <label for="max">até </label>
                                 <input
                                     type="number"
-                                    name="teste"
-                                    id="teste"
+                                    name="max"
+                                    id="max"
                                     inputmode="numeric"
                                     min="0"
-                                    max="10000"
-                                    value="100"
+                                    max="1000"
+                                    value="10"
+                                    required
+                                />
+                            </div>
+                            <div class="number-field">
+                                <label for="amount">números</label>
+                                <input
+                                    type="number"
+                                    name="amount"
+                                    id="amount"
+                                    inputmode="numeric"
+                                    min="0"
+                                    max="100"
+                                    value="2"
                                     required
                                 />
                             </div>
                         </fieldset>
                         <label class="switch-toggle">
                             <div>
-                                <input type="checkbox" name="repeat" id="repeat" />
-                                <label for="repeat" class="switch">
+                                <input type="checkbox" name="notRepeat" id="notRepeat" checked />
+                                <label for="notRepeat" class="switch">
                                     <span class="slider"></span>
                                 </label>
                             </div>
@@ -97,13 +96,12 @@
                     <h2>Resultado do sorteio</h2>
                     <span>1º resultado</span>
 
-                    <ul role="list" class="numbers">
-                        <li>32</li>
-                    </ul>
+                    <ul role="list" class="numbers"></ul>
                     <button class="btn">
                         Sortear novamente
                         <img src="./assets/replay.svg" alt="" />
                     </button>
+                    <button id="back">&#x2190; voltar</button>
                 </section>
             </main>
 
