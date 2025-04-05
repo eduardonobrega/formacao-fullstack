@@ -27,7 +27,49 @@
                     <i><img src="assets/calendar.svg" alt="Calendário" /></i>
                     <input type="date" id="date" name="date" required />
                 </div>
-             </header>
+            </header>
+            <main>
+                <section class="schedule-period">
+                    <header>
+                        <img src="assets/morning.svg" alt="Manhã" />
+                        <h2>Manhã</h2>
+                        <span>09h-12h</span>
+                    </header>
+                    <ul id="period-morning" class="period" role="list"></ul>
+                </section>
+
+                <section class="schedule-period">
+                    <header>
+                        <img src="assets/afternoon.svg" alt="Tarde" />
+                        <h2>Manhã</h2>
+                        <span>13h-18h</span>
+                    </header>
+                    <ul id="period-afternoon" class="period" role="list">
+                        <li>
+                            <strong>09:00</strong>
+                            <span><strong>Thor&nbsp;</strong> / Fernanda Costa</span>
+                            <span>Vacinação</span>
+                            <button class="link">Remover agendamento</button>
+                        </li>
+                        <li>
+                            <strong>09:00</strong>
+                            <span><strong>Thor&nbsp;</strong> / Fernanda Costa</span>
+                            <span>Vacinação</span>
+                            <button class="link">Remover agendamento</button>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="schedule-period">
+                    <header>
+                        <img src="assets/night.svg" alt="Noite" />
+                        <h2>Manhã</h2>
+                        <span>19h-21h</span>
+                    </header>
+                    <ul id="period-night" class="period" role="list"></ul>
+                </section>
+            </main>
         </div>
     </body>
+    <!--  -->
 </html>
