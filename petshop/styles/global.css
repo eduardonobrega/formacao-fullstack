@@ -6,6 +6,7 @@
     --font-title: 700 2.4rem/1.33 var(--font-family-inter-tight);
     --font-paragraph-medium: 500 1.4rem/1.71 var(--font-family-inter);
     --font-paragraph-small: 500 1.2rem/1.33 var(--font-family-inter);
+    --font-input: 400 1.6rem/1.5 var(--font-family-inter);
     --font-label-large: 700 1.6rem/1.5 var(--font-family-inter);
     --font-label-medium: 700 1.4rem/1.71 var(--font-family-inter);
     --font-label-small: 700 1.2rem/1.33 var(--font-family-inter);
@@ -92,4 +93,9 @@ ul[role="list"] {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#app {
+    width: min(90%, 711px);
+    margin: 0 auto;
 }

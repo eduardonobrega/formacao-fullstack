@@ -1,0 +1,19 @@
+#app > header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.2rem;
+
+    h1 {
+        font: var(--font-title);
+        margin-bottom: 4px;
+    }
+    p {
+        color: var(--content-secondary);
+    }
+
+    @media (max-width: 520px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
