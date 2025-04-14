@@ -1,0 +1,22 @@
+.addButton {
+    background-color: var(--content-brand);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+    padding: 1.2rem;
+    position: fixed;
+    bottom: 3vw;
+    right: 5vw;
+
+    &:hover {
+        background-color: var(--background-highlights);
+        transform: scale(0.9);
+    }
+
+    img {
+        width: 2.6rem;
+        height: 2.6rem;
+    }
+ }
