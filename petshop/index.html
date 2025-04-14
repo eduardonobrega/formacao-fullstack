@@ -69,9 +69,63 @@
                     <ul id="period-night" class="period" role="list"></ul>
                 </section>
             </main>
-            <button class="addButton">
+            <button class="button addButton">
                 <img src="assets/plus.svg " alt="" />
             </button>
+            <div class="blur open">
+                <section id="form">
+                    <h1>Agende um atendimento</h1>
+                    <p>Preencha os dados do cliente para realizar o agendamento:</p>
+                    <form id="scheduleForm">
+                        <div class="input-wrapper">
+                            <label for="owner">Nome do tutor</label>
+                            <div class="input">
+                                <i><img src="assets/user.svg" alt="ícone de usuário" /></i>
+                                <input type="text" id="owner" name="owner" placeholder="Helena Souza" />
+                            </div>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="pet">Nome do pet</label>
+                            <div class="input">
+                                <i><img src="assets/pet.svg" alt="ícone de uma pata" /></i>
+                                <input type="text" id="pet" name="pet" placeholder="Cheddar" />
+                            </div>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="phone">Telefone</label>
+                            <div class="input">
+                                <i><img src="assets/phone.svg" alt="ícone de uma Telefone" /></i>
+                                <input type="text" id="phone" name="phone" placeholder="(00) 0 0000-0000" />
+                            </div>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="description">Descrição do serviço</label>
+                            <textarea name="description" id="description" placeholder="Banho e tosa"></textarea>
+                        </div>
+
+                        <div class="two-columns">
+                            <div class="input-wrapper">
+                                <label for="date">Data</label>
+                                <div class="input">
+                                    <i><img src="assets/calendar.svg" alt="ícone de um calendário" /></i>
+                                    <input type="date" id="date" name="date" required value="2024-01-10" />
+                                </div>
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="time">Hora</label>
+                                <div class="input">
+                                    <i><img src="assets/clock.svg" alt="ícone de um relógio" /></i>
+                                    <input type="time" id="time" name="time" required value="12:00" />
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <button class="button" form="scheduleForm">Agendar</button>
+                </section>
+            </div>
         </div>
     </body>
 </html>

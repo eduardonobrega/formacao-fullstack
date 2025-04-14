@@ -1,0 +1,35 @@
+.button {
+    text-transform: uppercase;
+    background-color: var(--content-brand);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+
+    padding: 1.2rem 2.4rem;
+    font: 700 1.6rem/1.5 var(--font-family-inter-tight);
+
+    &:hover,
+    &:focus {
+        background-color: var(--background-highlights);
+    }
+}
+
+.addButton {
+    padding: 1.2rem;
+    position: fixed;
+    bottom: 3vw;
+    right: 5vw;
+    transition: background-color 0.3s, transform 0.3s;
+
+    img {
+        width: 2.6rem;
+        height: 2.6rem;
+    }
+
+    &:hover,
+    &:focus {
+        transform: scale(0.9);
+    }
+}
