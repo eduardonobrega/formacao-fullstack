@@ -4,7 +4,8 @@
     "main": "./src/main.js",
     "scripts": {
         "build": "webpack",
-        "dev": "webpack serve"
+        "dev": "webpack serve",
+        "server": "json-server --watch db.json --port 3333"
     },
     "author": "Eduardo Nóbrega",
     "description": "Sistema Web para agendamentos em um petshop",
@@ -19,5 +20,8 @@
         "webpack": "^5.99.7",
         "webpack-cli": "^6.0.1",
         "webpack-dev-server": "^5.2.1"
+    },
+    "dependencies": {
+        "json-server": "^1.0.0-beta.3"
     }
 }
