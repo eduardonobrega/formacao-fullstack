@@ -70,11 +70,18 @@ textarea {
             color: var(--content-secondary);
         }
     }
-
+    &:has(select:empty) {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
     select {
         background: url("../assets/arrow-down.svg") no-repeat center right;
         background-color: var(--background-tertiary);
         cursor: pointer;
+
+        &:empty {
+            cursor: not-allowed;
+        }
     }
 }
 
