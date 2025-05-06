@@ -8,4 +8,6 @@ import "./styles/schedules.css"
 import "./styles/button.css"
 import "./styles/form.css"
 
-console.log("Hello Webpack!")
+
+// JS
+import "./modules/form/show.js"
