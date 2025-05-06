@@ -49,22 +49,32 @@ textarea {
     i {
         width: 2rem;
         height: 2rem;
+        flex-shrink: 0;
     }
-
-    input {
+    input,
+    select {
         appearance: none;
         -moz-appearance: none;
         -webkit-appearance: none;
         outline: none;
         border: none;
-        background: none;
+        width: 100%;
         color: var(--content-primary);
         font: var(--font-input);
-        width: 100%;
+    }
+
+    input {
+        background: none;
 
         &::placeholder {
             color: var(--content-secondary);
         }
+    }
+
+    select {
+        background: url("../assets/arrow-down.svg") no-repeat center right;
+        background-color: var(--background-tertiary);
+        cursor: pointer;
     }
 }
 
