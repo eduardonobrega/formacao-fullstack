@@ -3,7 +3,9 @@ import { openingHours } from "../../utils/opening-hours"
 
 const select = document.getElementById("time")
 
-export function hoursLoad({ date }) {
+export function hoursLoad({ date, dailySchedules }) {
+    const reserved = dailySchedules.map(schedule => dayjs(schedule.when).format("HH:mm"))
+
     const hours = openingHours.map(hour => {
         const [h, m] = hour.split(":")
 
@@ -13,7 +15,7 @@ export function hoursLoad({ date }) {
 
         return {
             hour,
-            available: isHourFuture,
+            available: isHourFuture && !reserved.includes(hour),
         }
     })
 
@@ -25,7 +27,7 @@ export function hoursLoad({ date }) {
     groupNight.label = "Noite"
 
     select.textContent = ""
-    
+
     hours.forEach(({ hour, available }) => {
         const option = document.createElement("option")
         option.setAttribute("value", hour)
