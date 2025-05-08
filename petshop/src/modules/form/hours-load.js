@@ -18,12 +18,28 @@ export function hoursLoad({ date }) {
         }
     })
 
+    const groupMorning = document.createElement("optgroup")
+    const groupAfternoon = document.createElement("optgroup")
+    const groupNight = document.createElement("optgroup")
+    groupMorning.label = "Manhã"
+    groupAfternoon.label = "Tarde"
+    groupNight.label = "Noite"
+
     hours.forEach(({ hour, available }) => {
         const option = document.createElement("option")
         option.setAttribute("value", hour)
         option.textContent = hour
         option.disabled = !available
-        fragment.append(option)
+
+        const [h, m] = hour.split(":")
+
+        if (h <= 12) {
+            groupMorning.appendChild(option)
+        } else if (h <= 18) {
+            groupAfternoon.appendChild(option)
+        } else if (h <= 21) {
+            groupNight.appendChild(option)
+        }
     })
-    select.appendChild(fragment)
+    select.append(groupMorning, groupAfternoon, groupNight)
 }
