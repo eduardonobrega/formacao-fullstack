@@ -60,7 +60,7 @@
 
                 display: flex;
                 flex-wrap: wrap;
-
+                white-space: pre;
                 strong {
                     color: var(--content-primary);
                     font-weight: 600;
