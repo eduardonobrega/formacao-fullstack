@@ -2,7 +2,6 @@ import dayjs from "dayjs"
 import { openingHours } from "../../utils/opening-hours"
 
 const select = document.getElementById("time")
-const fragment = document.createDocumentFragment()
 
 export function hoursLoad({ date }) {
     const hours = openingHours.map(hour => {
@@ -25,6 +24,8 @@ export function hoursLoad({ date }) {
     groupAfternoon.label = "Tarde"
     groupNight.label = "Noite"
 
+    select.textContent = ""
+    
     hours.forEach(({ hour, available }) => {
         const option = document.createElement("option")
         option.setAttribute("value", hour)
