@@ -1,36 +1,12 @@
 {
   "schedules": [
     {
-      "id": "6167",
-      "owner": "Eduardo",
-      "pet": "Nina",
-      "phone": "(87) 98111-9779",
-      "description": "Banho",
-      "when": "2025-05-08T18:00:00.000Z"
-    },
-    {
-      "id": "c62e",
-      "owner": "Sarah",
-      "pet": "wendy",
-      "phone": "(87) 98829-4287",
-      "description": "Tosa",
-      "when": "2025-05-08T14:00:00.000Z"
-    },
-    {
       "id": "8ad4",
       "owner": "Eduardo",
       "pet": "Maia",
       "phone": "(87) 98829-4287",
       "description": "Banho",
       "when": "2025-05-08T23:00:00.000Z"
-    },
-    {
-      "id": "73ff",
-      "owner": "Eduardo",
-      "pet": "ed",
-      "phone": "(87) 98111-9779",
-      "description": "banhi",
-      "when": "2025-05-09T17:00:00.000Z"
     }
   ]
 }

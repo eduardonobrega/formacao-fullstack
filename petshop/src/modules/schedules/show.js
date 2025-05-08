@@ -1,4 +1,5 @@
 import dayjs from "dayjs"
+import { removeSchedule } from "../../services/remove-schedule.js"
 
 const periodMorning = document.getElementById("period-morning")
 const periodAfternoon = document.getElementById("period-afternoon")
@@ -26,6 +27,8 @@ export function showSchedules(dailySchedules) {
         description.textContent = schedule.description
         removeButton.textContent = "Remover agendamento"
         removeButton.classList.add("link")
+        removeButton.addEventListener("click", async () => await removeSchedule(schedule.id))
+
         li.append(hourField, names, description, removeButton)
 
         const hour = date.hour()
