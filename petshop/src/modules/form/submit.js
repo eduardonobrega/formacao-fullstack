@@ -1,6 +1,7 @@
 const dayjs = require("dayjs")
-const { newSchedule } = require("../schedules/new-schedule.js")
+const { newSchedule } = require("../../services/new-schedule.js")
 const { closeForm } = require("./show.js")
+const { schedulesDay } = require("../schedules/load.js")
 
 const form = document.querySelector("form")
 // Fields
@@ -29,7 +30,8 @@ form.addEventListener("submit", async event => {
             description: description.value,
             when,
         })
-        
+
+        await schedulesDay()
         closeForm()
         alert("Agendamento criado com sucesso")
     } catch (error) {
