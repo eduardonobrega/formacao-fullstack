@@ -12,6 +12,7 @@ Repositório destinado a armazenar todas as resoluções dos desafios que desenv
 6. [Agendamento PetShop](#6-agendamento-petshop)
 
 ---
+
 <!--
 ## 6. Agendamento PetShop
 
@@ -177,10 +178,11 @@ Este projeto apresenta um site de portfólio para desenvolvedores, disponível e
 
 &nbsp;
 -->
+
 ## 1. Local Turístico
 
 <p>
-<img src="https://github.com/user-attachments/assets/566eec72-c166-42ab-b3c9-c4a2a87a5c6d" />
+<img src="https://efficient-sloth-d85.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F08f749ff-d06d-49a8-a488-9846e081b224%2F86c8ae46-7958-4e40-bbaa-7aa3d54f1250%2FThumbnail.png?table=block&id=883835c9-daff-4c0b-bd2c-16fc3597e350&spaceId=08f749ff-d06d-49a8-a488-9846e081b224&width=2000&userId=&cache=v2" />
 </p>
 
 Este projeto consiste em uma página web sobre um local turístico, desenvolvida com HTML e CSS. O foco está na estruturação de conteúdo e estilização para proporcionar uma experiência agradável ao usuário.
@@ -192,11 +194,11 @@ Este projeto consiste em uma página web sobre um local turístico, desenvolvida
 
 <br />
 
-<a href="https://local-turistico-delta.vercel.app" target="_blank">
+<a href="https://tourist-site-pj.vercel.app/" target="_blank">
 <img src="https://user-images.githubusercontent.com/71772559/178192066-d52e0cf7-906e-4baa-80f3-4b49dde153c0.png" />
 </a>
 
-<a href="/local-turistico" target="_blank">
+<a href="/tourist-site" target="_blank">
 <img src="https://user-images.githubusercontent.com/71772559/178192378-234b9c46-7e31-47fb-8ddf-245617d8b198.png" />
 </a>
 
