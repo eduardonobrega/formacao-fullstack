@@ -1,0 +1,30 @@
+#kit {
+    margin-top: clamp(10.4rem, 3.806rem + 17.5839vw, 23.5rem);
+    margin-bottom: clamp(6.4rem, 5.1919rem + 3.2215vw, 8.8rem);
+    text-align: center;
+
+    h2 {
+        font: var(--title-sm);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.6rem;
+    }
+
+    > div:last-child {
+        position: relative;
+        min-height: 80vh;
+        img {
+            position: absolute;
+
+            &[src*="book."] {
+                width: min(50%, 467px);
+                left: 50%;
+                right: 50%;
+                top: 134px;
+                transform: translateX(-54%);
+            }
+        }
+    }
+}

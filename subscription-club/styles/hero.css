@@ -1,0 +1,45 @@
+.book-bg {
+    background-image: url(../assets/images/hero-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    min-height: 100vh;
+}
+header {
+    width: min(95%, 1120px);
+    margin-inline: auto;
+    padding-top: clamp(2rem, 0.1879rem + 4.8322vw, 5.6rem);
+    margin-bottom: clamp(4.8rem, -1.0389rem + 15.5705vw, 16.4rem);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img:first-of-type {
+        display: none;
+    }
+}
+
+#hero {
+    text-align: center;
+    h1 {
+        font: var(--title-lg);
+        margin: 0 auto;
+        width: min(95%, 22ch);
+    }
+
+    p {
+        font: var(--body-lg);
+        margin: 1.6rem auto 0;
+        width: min(95%, 42ch);
+    }
+}
+
+@media (min-width: 425px) {
+    header img:last-of-type {
+        display: none;
+    }
+
+    header img:first-of-type {
+        display: block;
+    }
+}

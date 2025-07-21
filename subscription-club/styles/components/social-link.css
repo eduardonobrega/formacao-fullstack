@@ -1,0 +1,50 @@
+.social-link {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    width: 4rem;
+    height: 4rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+        width: 2.4rem;
+        height: 2.4rem;
+        path {
+            transition: fill 350ms linear, filter 350ms linear;
+        }
+    }
+
+    &:hover,
+    &:focus {
+        &::after {
+            opacity: 1;
+        }
+
+        svg {
+            path {
+                fill: var(--text-body);
+                filter: brightness(2);
+            }
+        }
+    }
+
+    &::after {
+        content: "";
+        background-color: var(--shape-stroke);
+        border-radius: 50%;
+        transition: opacity 350ms linear;
+        opacity: 0;
+
+        width: inherit;
+        height: inherit;
+
+        display: block;
+        position: absolute;
+        z-index: -1;
+    }
+}

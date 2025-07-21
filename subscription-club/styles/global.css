@@ -1,0 +1,103 @@
+:root {
+    font-size: 62.5%;
+
+    --font-family: "Raleway", sans-serif;
+
+    /* Titles */
+    --title-lg: 700 clamp(2.8rem, 2.0958rem + 1.8779vw, 4.8rem) var(--font-family);
+    --title-md: 700 4rem var(--font-family);
+    --title-sm: 700 clamp(2.4rem, 2.1183rem + 0.7512vw, 3.2rem) var(--font-family);
+    --title-xs: 700 1.6rem var(--font-family);
+
+    /* Subtitle */
+    --subtitle: 500 clamp(1.6rem, 1.0366rem + 1.5023vw, 3.2rem) / 2 var(--font-family);
+
+    /* Body */
+    --body-lg: 400 clamp(1.4rem, 1.1887rem + 0.5634vw, 2rem) / 1.4 var(--font-family);
+    --body-lg-bold: 700 2rem/1.4 var(--font-family);
+
+    --body-md: 400 clamp(1.4rem, 1.2993rem + 0.2685vw, 1.6rem) / 1.4 var(--font-family);
+    --body-md-bold: 700 1.6rem/1.4 var(--font-family);
+
+    --body-sm: 400 1.4rem/1.4 var(--font-family);
+    --body-sm-bold: 700 1.4rem/1.4 var(--font-family);
+
+    --body-xs: 400 1.2rem/1.4 var(--font-family);
+    --body-xs-bold: 700 1.2rem/1.4 var(--font-family);
+
+    /* Button */
+    --button: 700 1.4rem var(--font-family);
+
+    /* Link */
+    --link: 500 1.4rem var(--font-family);
+
+    /* Tag */
+    --tag: 700 1rem var(--font-family);
+    --tag-letter-spacing: 0.5rem;
+    --tag-text-transform: uppercase;
+
+    /* Cores  */
+    /* Pink */
+    --pink-light: #c59dd2;
+    --pink-base: #9547a5;
+    --pink-dark: #7d298a;
+    --pink-low: #3f0f41;
+    /* Blue */
+    --blue-light: #73b6d2;
+    --blue-base: #358bb9;
+    --blue-mid: #2374a4;
+    --blue-dark: #144a72;
+    --blue-low: #08233c;
+    /* Shape */
+    --shape-stroke: #002347;
+    --shape-hover: #001933;
+    --shape-base: #000f1f;
+    --shape-background: #00050a;
+    /* Text */
+    --text-title: #f8fbfb;
+    --text-body: #e2e7e9;
+    --text-label: #bac6c9;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+body,
+input,
+button,
+textarea {
+    font: var(--body-md);
+    font-optical-sizing: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    background-color: var(--shape-background);
+    color: var(--text-body);
+    min-height: 100vh;
+}
+
+a {
+    font: var(--link);
+    color: var(--blue-light);
+    text-decoration: none;
+}
+
+ul[role="list"] {
+    list-style: none;
+}

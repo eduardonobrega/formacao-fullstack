@@ -1,0 +1,170 @@
+.box {
+    overflow-x: auto;
+}
+
+.cards {
+    display: flex;
+    gap: 1.6rem;
+    width: max-content;
+    padding-inline: 5.6rem;
+    padding-top: 4rem;
+}
+
+.card {
+    background-color: var(--shape-base);
+    border: 1px solid var(--shape-stroke);
+    border-radius: 24px;
+    flex-shrink: 0;
+
+    padding: 3.2rem 3.2rem 2.8rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: fit-content;
+    height: 40rem;
+
+    &:hover,
+    &:focus-within {
+        border-color: var(--shape-hover);
+        background-color: var(--shape-hover);
+        box-shadow: 0px 0px 66px 0px rgba(53, 139, 185, 0.1);
+    }
+
+    h3 {
+        font: var(--title-xs);
+        color: var(--blue-light);
+    }
+
+    strong {
+        display: block;
+        margin: 2.4rem 0 0.8rem;
+        font: var(--title-md);
+        color: var(--text-title);
+
+        span {
+            font: var(--title-xs);
+        }
+    }
+
+    small {
+        color: var(--text-label);
+        font: var(--body-sm);
+    }
+
+    ul {
+        margin-bottom: 2.4rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        li {
+            font: var(--body-xs);
+            display: flex;
+            align-items: center;
+            &::before {
+                flex-shrink: 0;
+                content: "";
+                display: inline-block;
+                width: 1.4rem;
+                height: 1.4rem;
+                background-image: url(../../assets/icons/star-blue.svg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                margin-right: 8px;
+            }
+        }
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+.card.popular {
+    position: relative;
+    > div > div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h3 {
+            color: var(--pink-light);
+        }
+        .tag {
+            font: var(--tag);
+            text-transform: var(--tag-text-transform);
+            letter-spacing: 0.5px;
+            background-color: var(--shape-stroke);
+            border-radius: 999px;
+            padding: 0.9rem 2rem;
+        }
+    }
+
+    ul {
+        li {
+            &::before {
+                background-image: url(../../assets/icons/star.svg);
+            }
+        }
+    }
+
+    > img {
+        position: absolute;
+        top: -5.2rem;
+    }
+}
+
+@media (min-width: 980px) {
+    .box {
+        overflow-x: visible;
+    }
+    .cards {
+        margin: 0 auto;
+        gap: 0;
+    }
+    .card {
+        &:hover,
+        &:focus-within {
+            z-index: 2;
+        }
+    }
+
+    .card:nth-child(1) {
+        transform: translateX(100%);
+        animation: move 3s ease 2s forwards, rotateLeft 3s ease 2s forwards;
+
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    }
+    .card:nth-child(2) {
+        animation: moveUp 3s ease 2s forwards;
+        z-index: 1;
+    }
+
+    .card:nth-child(3) {
+        transform: translateX(-100%);
+        animation: move 3s ease 2s forwards, rotateRight 3s ease 2s forwards;
+    }
+}
+
+@keyframes rotateRight {
+    to {
+        transform: rotate(8deg);
+    }
+}
+@keyframes rotateLeft {
+    to {
+        transform: rotate(-8deg);
+    }
+}
+
+@keyframes moveUp {
+    to {
+        transform: translateY(-75px);
+    }
+}
+
+@keyframes move {
+    to {
+        transform: translateX(0) translateY(0);
+    }
+}
