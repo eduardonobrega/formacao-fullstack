@@ -1,0 +1,86 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2.5rem 0 6.2rem;
+}
+
+main {
+    width: min(95%, 627px);
+    margin: 0 auto;
+
+    > div {
+        a {
+            color: var(--brand);
+            font: var(--link);
+            transition: color 0.3s;
+
+            &:hover {
+                color: var(--brand-hover);
+                text-decoration: underline;
+            }
+            &::before {
+                display: inline-block;
+                margin-right: 0.5ch;
+                content: "<-";
+            }
+        }
+
+        h1 {
+            font: var(--title);
+            margin: 1.6rem 0 4.4rem;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.6rem;
+
+        .btn,
+        .text-field {
+            height: 4.4rem;
+        }
+        .btn {
+            min-width: 160px;
+            flex: 1;
+        }
+        .text-field {
+            flex: 3;
+            min-width: 250px;
+        }
+    }
+
+    ul {
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        overflow-y: scroll;
+        max-height: calc((52px + 12px) * 5 + 12px);
+
+        padding-right: 1rem;
+
+        &::-webkit-scrollbar {
+            width: 1rem;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: transparent;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: var(--brand);
+            border-radius: 1rem;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    header {
+        display: none;
+    }
+
+    main {
+        padding-top: 3.4rem;
+    }
+}

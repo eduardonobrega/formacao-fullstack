@@ -1,0 +1,25 @@
+.upload {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+
+    > button {
+        position: relative;
+
+        overflow: hidden;
+        input {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            cursor: pointer;
+            opacity: 0;
+            padding-left: 200px;
+        }
+    }
+
+    > span {
+        color: var(--input-placeholder);
+    }
+}

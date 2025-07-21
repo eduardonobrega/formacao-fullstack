@@ -1,0 +1,107 @@
+.schedule-period {
+    background-color: var(--background-tertiary);
+    border-radius: 1rem;
+
+    & + & {
+        margin-top: 1.2rem;
+    }
+
+    header {
+        padding: 1.2rem 2rem;
+        border-bottom: 1px solid #2e2c30;
+
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+
+        span {
+            width: 100%;
+            text-align: right;
+            font: var(--h2);
+            color: var(--content-secondary);
+        }
+    }
+
+    .period {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+
+        &:empty::before {
+            content: "Nenhum agendamento disponível.";
+            display: block;
+            text-align: center;
+            color: var(--content-secondary); /* Ou qualquer cor desejada */
+            font-size: 1.4rem;
+        }
+
+        li {
+            padding: 1.6rem 1.2rem;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1.6rem;
+
+            &:not(:last-child) {
+                border-bottom: 0.6px solid var(--border-divisor);
+            }
+
+            > strong {
+                font: var(--font-label-medium);
+            }
+
+            > span {
+                flex: 2;
+                font: var(--font-paragraph-small);
+                color: var(--content-secondary);
+
+                display: flex;
+                flex-wrap: wrap;
+                white-space: pre;
+                strong {
+                    color: var(--content-primary);
+                    font-weight: 600;
+                }
+            }
+
+            .link {
+                border: none;
+                outline: none;
+                background: none;
+                cursor: pointer;
+                text-decoration: none;
+                font: var(--font-link);
+                color: var(--content-tertiary);
+
+                &:hover {
+                    color: #a81e1e;
+                    text-decoration: underline;
+                }
+            }
+
+            @media (max-width: 650px) {
+                display: grid;
+                gap: 1.2rem;
+                grid-template-areas:
+                    "h v"
+                    "n  x";
+                    
+                > strong {
+                    grid-area: h;
+                }
+                > span:first-of-type {
+                    grid-area: n;
+                }
+                > span:last-of-type {
+                    grid-area: v;
+                }
+                .link {
+                    grid-area: x;
+                }
+            }
+        }
+    }
+}

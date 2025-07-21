@@ -1,0 +1,82 @@
+@import url(button.css);
+@import url(upload.css);
+@import url(switch.css);
+@import url(checkbox.css);
+@import url(color-selection.css);
+@import url(theme.css);
+@import url(segmented-control.css);
+
+input {
+    height: 4.8rem;
+    padding: 1.3rem 1.6rem;
+}
+
+textarea {
+    padding: 1.6rem;
+    min-height: 13.6rem;
+    resize: vertical;
+}
+
+input,
+textarea {
+    background-color: var(--input-base);
+
+    border: 1px solid var(--input-stroke);
+    border-radius: 8px;
+    color: var(--text-heading);
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    &::placeholder {
+        color: var(--input-placeholder);
+    }
+
+    &:focus {
+        border-color: var(--brand-light);
+        outline: none;
+    }
+
+    &:invalid {
+        border-color: var(--danger);
+    }
+    /* &:required:invalid:not(:placeholder-shown) {
+        border-color: var(--danger);
+    } */
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    > label:first-child {
+        margin-bottom: 1.2rem;
+        width: fit-content;
+    }
+
+    > small {
+        transition: opacity 0.3s ease-in-out;
+        opacity: 0;
+        font: var(--small);
+        color: var(--danger);
+        font-size: 1.2rem;
+        margin-top: 0.8rem;
+
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+
+        img {
+            width: 1.6rem;
+            height: 1.6rem;
+        }
+    }
+
+    &:has(input:invalid) {
+        small {
+            opacity: 1;
+        }
+    }
+}

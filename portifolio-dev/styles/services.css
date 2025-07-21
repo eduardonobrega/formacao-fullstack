@@ -1,0 +1,24 @@
+#services {
+    background-color: var(--gray-100);
+    padding: 10rem 5vw;
+    > div {
+        margin-top: 5.6rem;
+
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 2.4rem;
+
+        > div {
+            min-width: 240px;
+            height: 15.5rem;
+            padding: 2rem;
+            border-radius: 12px;
+            border: 2px solid var(--gray-200);
+            h3 {
+                margin: 2rem 0 .8rem;
+            }
+        }
+    }
+}

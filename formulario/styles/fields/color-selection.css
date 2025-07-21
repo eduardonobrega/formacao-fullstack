@@ -1,0 +1,49 @@
+.color-field {
+    width: fit-content;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    border: 2px solid var(--shape-button);
+    background-color: var(--shape-button);
+    border-collapse: collapse;
+    cursor: pointer;
+
+    input {
+        width: 100%;
+        height: 100%;
+
+        padding: 0;
+        border-radius: 50%;
+        border: 4px solid var(--shape-button);
+        cursor: pointer;
+    }
+    &:hover {
+        input {
+            border-color: var(--shape-hover);
+        }
+        border-color: var(--shape-hover);
+    }
+    &:has(input:checked) {
+        border-color: var(--brand-light);
+        background-color: var(--brand-light);
+    }
+    &:has(input:focus) {
+        border-color: var(--brand-light);
+        background-color: var(--brand-light);
+
+        input {
+            border-color: var(--shape-hover);
+        }
+    }
+}
+
+.color-selection {
+    > div {
+        margin-top: 1.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.2rem;
+    }
+}

@@ -1,0 +1,29 @@
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+
+    label {
+        font: var(--text-sm-r);
+
+        a {
+            color: var(--brand-light);
+            font-weight: 600;
+        }
+    }
+    input {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 4px;
+        flex-shrink: 0;
+        padding: 0;
+
+        &:checked {
+            background-image: url("../../assets/icons/check.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 90%;
+            border-color: var(--brand-light);
+        }
+    }
+}

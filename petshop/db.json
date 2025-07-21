@@ -1,0 +1,12 @@
+{
+  "schedules": [
+    {
+      "id": "8ad4",
+      "owner": "Eduardo",
+      "pet": "Maia",
+      "phone": "(87) 98829-4287",
+      "description": "Banho",
+      "when": "2025-05-08T23:00:00.000Z"
+    }
+  ]
+}

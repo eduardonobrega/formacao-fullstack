@@ -1,0 +1,41 @@
+.alert {
+    background-color: var(--danger);
+    border-radius: 12px;
+
+    width: min(95%, 627px);
+    padding: 1.2rem;
+    margin: 3.6rem auto 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    > div {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+
+        span {
+            font: var(--label);
+            color: var(--always-white);
+        }
+    }
+
+    &.hide {
+        display: none;
+    }
+
+    button {
+        background: none;
+        border: none;
+        outline: none;
+        cursor: pointer;
+
+        transition: transform .3s;
+        &:hover,
+        &:focus {
+            transform: scale(1.1) rotate(25deg);
+        }
+    }
+}
+

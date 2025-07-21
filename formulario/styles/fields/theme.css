@@ -1,0 +1,52 @@
+.theme-selection {
+    margin-top: 1.6rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.theme {
+    background-color: var(--shape-button);
+    max-width: 13.4rem;
+    padding: 0.4rem 0.4rem 0.8rem 0.4rem;
+    cursor: pointer;
+    border: 1px solid var(--input-stroke);
+    border-radius: 8px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    text-align: center;
+
+    &:hover,
+    &:focus-within {
+        background-color: var(--input-stroke);
+    }
+
+    &:has(input:checked) {
+        border-color: var(--brand-light);
+        outline: 1px solid var(--brand-light);
+    }
+
+    img {
+        border-radius: 4px;
+        height: 6.4rem;
+        object-fit: cover;
+        object-position: center;
+    }
+    label {
+        font-size: 1.4rem;
+        color: var(--text-heading);
+        cursor: pointer;
+    }
+
+    input {
+        position: absolute;
+        inset: 0;
+        cursor: pointer;
+        opacity: 0;
+        height: auto;
+    }
+}

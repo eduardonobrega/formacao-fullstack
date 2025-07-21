@@ -1,0 +1,47 @@
+button {
+    color: var(--text-heading);
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+button.primary {
+    background-color: var(--brand-dark);
+    gap: 1.2rem;
+    padding: 1.4rem 2rem;
+
+    svg {
+        width: 2rem;
+        height: 2rem;
+
+        path {
+            fill: var(--text-heading);
+        }
+    }
+    &:hover {
+        background-color: var(--brand-mid);
+    }
+}
+
+button.secondary {
+    background-color: var(--shape-button);
+    font-size: 1.4rem;
+    padding: 1.2rem;
+    gap: 0.8rem;
+
+    svg {
+        width: 1.6rem;
+        height: 1.6rem;
+        path {
+            fill: var(--brand-light);
+        }
+    }
+    &:hover {
+        background-color: var(--shape-hover);
+    }
+}

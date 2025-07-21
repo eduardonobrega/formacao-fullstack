@@ -1,0 +1,12 @@
+#projects {
+    padding: 8rem 5vw 0;
+    > div {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2.4rem;
+
+        max-width: 1040px;
+        margin: 5.6rem auto 5.6rem;
+    }
+}

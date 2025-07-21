@@ -1,0 +1,18 @@
+#app > header {
+    margin-bottom: 3.2rem;
+    margin-top: clamp(2rem, -2.8598rem + 12.4611vw, 6rem); 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.2rem;
+
+    p {
+        margin-top: 4px;
+        color: var(--content-secondary);
+    }
+
+    @media (max-width: 520px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

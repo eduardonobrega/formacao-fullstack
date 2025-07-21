@@ -1,0 +1,24 @@
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid var(--border-primary);
+
+    width: 1.6rem;
+    height: 1.6rem;
+
+    &:checked {
+        background-image: url("../../assets/check.svg");
+        background-color: var(--brand);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &:hover,
+    &:focus {
+        border-color: var(--border-hover);
+    }
+}

@@ -1,0 +1,22 @@
+#contact {
+    padding: 10rem 5vw;
+    background-image: url(../assets/Background_Contacts.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    p {
+        font: var(--text-md);
+        text-align: center;
+    }
+
+    > ul {
+        list-style: none;
+        margin: 4.8rem auto 0;
+        max-width: 400px;
+
+        display: flex;
+        
+        flex-direction: column;
+        gap: 1.6rem;
+    }
+}
