@@ -1,6 +1,6 @@
 # 🌍 Local Turístico
 
-Landing Page de turismo desenvolvida como desafio da formação **Ignite – Rocketseat**, utilizando apenas **HTML e CSS**.
+Landing Page de turismo desenvolvida como desafio da formação **Fullstack – Rocketseat**, utilizando apenas **HTML e CSS**.
 
 Projeto focado em **estruturação semântica**, **organização de layout** e **estilização básica**.
 
