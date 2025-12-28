@@ -1,5 +1,22 @@
 .contacts {
     padding: 12rem 0;
+
+    margin-top: 12rem;
+
+    background: var(--gray-500) url(../assets/bg-contacts.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.contacts h2 {
+    margin-bottom: .8rem;
+}
+
+.contacts p {
+    color: var(--gray-200);
+    text-align: center;
+    margin-bottom: 6rem;
 }
 
 .redes {
