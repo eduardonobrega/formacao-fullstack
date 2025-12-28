@@ -8,8 +8,8 @@
     --logo: 400 4rem/1.2 var(--font-logo);
 
     /* Titles / Headings */
-    --title-md: 700 2.8rem/1.2 var(--font-title);
-    --title-sm: 700 1.8rem/1.2 var(--font-title);
+    --title-md: 700 2.8rem/1 var(--font-title);
+    --title-sm: 700 1.8rem/1 var(--font-title);
 
     /* Body */
     --body-md-regular: 400 1.6rem/1.5 var(--font-body);

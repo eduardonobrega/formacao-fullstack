@@ -34,6 +34,8 @@ textarea {
 
 body {
     min-height: 100vh;
+    color: var(--text-body);
+    background-color: var(--shape-body);
 }
 
 a {
