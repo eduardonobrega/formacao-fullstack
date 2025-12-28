@@ -1,0 +1,23 @@
+:root {
+    /* Font families */
+    --font-logo: "Leckerli One", cursive;
+    --font-title: "Baloo 2", cursive;
+    --font-body: "Open Sans", sans-serif;
+
+    /* Logo */
+    --logo: 400 4rem/1.2 var(--font-logo);
+
+    /* Titles / Headings */
+    --title-md: 700 2.8rem/1.2 var(--font-title);
+    --title-sm: 700 1.8rem/1.2 var(--font-title);
+
+    /* Body */
+    --body-md-regular: 400 1.6rem/1.5 var(--font-body);
+    --body-md-semibold: 600 1.6rem/1.5 var(--font-body);
+
+    --body-sm-regular: 400 1.4rem/1.5 var(--font-body);
+    --body-sm-semibold: 600 1.4rem/1.5 var(--font-body);
+
+    --body-xs-regular: 400 1.2rem/1.5 var(--font-body);
+    --body-xs-semibold: 600 1.2rem/1.5 var(--font-body);
+}
