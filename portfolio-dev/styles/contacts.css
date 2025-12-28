@@ -1,0 +1,37 @@
+.contacts {
+    padding: 12rem 0;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    width: min(95vw, 400px);
+    margin: 0 auto;
+}
+
+.redes li a {
+    color: var(--gray-200);
+    background-color: var(--gray-400);
+
+    border-radius: 8px;
+    border: 1.5px solid transparent;
+    padding: 2rem;
+
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    gap: 1.2rem;
+    align-items: center;
+}
+
+.redes li img {
+    justify-self: end;
+}
+
+.redes li a:hover {
+    border-color: var(--color-blue);
+}
+
+.redes li a:hover svg path {
+    fill: var(--color-blue);
+}
