@@ -33,9 +33,20 @@ textarea {
 
 body {
     min-height: 100vh;
+    background-color: var(--gray-600);
 }
 
 a {
     color: inherit;
     text-decoration: none;
+}
+
+h2 {
+    font: var(--title-md);
+    color: var(--gray-100);
+}
+
+.destaque {
+    color: var(--color-red);
+    display: block;
 }
