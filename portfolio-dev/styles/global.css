@@ -11,6 +11,10 @@
     font: inherit;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 img,
 picture,
 svg,

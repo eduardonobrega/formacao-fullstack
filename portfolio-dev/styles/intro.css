@@ -84,6 +84,23 @@
     height: 2.4rem;
 }
 
+.intro .arrow {
+    margin-top: 6rem;
+    position: relative;
+    top: 0;
+    animation: arrow .3s ease-in-out infinite alternate;
+}
+
+@keyframes arrow {
+    from {
+        top: 0;
+    }
+
+    to {
+        top: 10px;
+    }
+}
+
 @media (max-width: 600px) {
     .perfil {
         max-width: 80px;
