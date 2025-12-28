@@ -1,0 +1,16 @@
+:root {
+    --font-title: "Asap", sans-serif;
+    --font-subtitle: "Inconsolata", monospace;
+    --font-text: "Maven Pro", "Arial", sans-serif;
+
+    /* ===== Titles | Asap ===== */
+    --title-lg: 700 clamp(3.6rem, 2.8727rem + 2.2727vw, 5.6rem) / 1.2 var(--font-title);
+    --title-md: 700 2.4rem/1.2 var(--font-title);
+    --title-sm: 700 1.6rem/1.2 var(--font-title);
+
+    /* ===== Subtitle | Inconsolata ===== */
+    --subtitle: 400 clamp(1.8rem, 1.7273rem + 0.2273vw, 2rem) / 1.2 var(--font-subtitle);
+
+    /* ===== Text | Maven Pro ===== */
+    --text-md: 400 clamp(1.4rem, 1.3273rem + 0.2273vw, 1.6rem) / 1.4 var(--font-text);
+}

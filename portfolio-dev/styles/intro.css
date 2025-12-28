@@ -1,0 +1,80 @@
+.intro {
+    text-align: center;
+    padding: 12rem 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--gray-500);
+    color: var(--gray-200);
+}
+
+.perfil {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+    border: 2px solid var(--color-red);
+    padding: 0.5rem;
+    margin-bottom: 6rem;
+    position: relative;
+}
+
+.perfil img {
+    border-radius: 50%;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.perfil::after {
+    content: "";
+    background-image: url(../assets/icons/Code.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    width: 3.2rem;
+    height: 3.2rem;
+
+    display: block;
+    position: absolute;
+    right: -1rem;
+    bottom: 0rem;
+}
+
+.intro p:first-of-type {
+    font: var(--subtitle);
+    margin-bottom: 0.8rem;
+}
+
+.destaque {
+    color: var(--color-red);
+}
+
+.intro h1 {
+    font: var(--title-lg);
+    color: var(--gray-100);
+    margin-bottom: 2rem;
+}
+
+.intro .description {
+    color: var(--gray-300);
+    max-width: 75ch;
+    text-align: center;
+
+    margin-bottom: 6rem;
+}
+
+.intro ul {
+    display: flex;
+    justify-content: center;
+    gap: 1.6rem;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+    .perfil {
+        max-width: 80px;
+        max-height: 80px;
+    }
+}
