@@ -47,8 +47,6 @@
 }
 
 .intro h1 {
-    font: var(--title-lg);
-    color: var(--gray-100);
     margin-bottom: 2rem;
 }
 

@@ -2,15 +2,6 @@
     padding: 12rem 0;
 }
 
-.projects span.destaque,
-.projects h2 {
-    text-align: center;
-}
-
-.projects h2 {
-    margin: 0.8rem 0 6rem;
-}
-
 .projects ul {
     width: min(95%, 1200px);
     margin: 0 auto;
