@@ -28,6 +28,13 @@
     min-height: 120px;
 }
 
+.input-wrapper:has(input:not(:placeholder-shown):invalid)::after {
+    content: attr(data-message);
+    color: var(--danger);
+    display: block;
+    margin-top: 8px;
+}
+
 input:not(:placeholder-shown):invalid,
 textarea:not(:placeholder-shown):invalid {
     border-color: var(--danger);
