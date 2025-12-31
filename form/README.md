@@ -11,7 +11,7 @@ O projeto permite cadastrar informações do evento, personalizar o visual do co
 
 ---
 
-<a href="https://portfolio-devedu.vercel.app/" target="_blank" rel="noopener noreferrer">
+<a href="https://form-edu.vercel.app/" target="_blank" rel="noopener noreferrer">
 <img src="https://user-images.githubusercontent.com/71772559/178192066-d52e0cf7-906e-4baa-80f3-4b49dde153c0.png" />
 </a>
 
