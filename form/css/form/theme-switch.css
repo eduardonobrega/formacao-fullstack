@@ -1,0 +1,62 @@
+.theme-switch {
+    position: relative;
+    width: 64px;
+    height: 32px;
+    display: flex;
+    border: 1px solid var(--input-stroke);
+    border-radius: 999px;
+}
+
+.theme-switch:focus-within {
+    border-color: var(--brand-light);
+}
+
+.theme-switch::after {
+    content: "Escuro";
+    display: inline-block;
+    position: relative;
+    right: calc(-100% - 1.2rem);
+    top: 20%;
+    font-size: 1.4rem;
+}
+
+.theme-switch:has(input:checked)::after {
+    content: "Claro";
+}
+
+.theme-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    inset: 0;
+    background-color: var(--input-base);
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 3px;
+    top: 3px;
+    background: var(--input-stroke);
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+/* Quando ativado */
+.theme-switch input:checked + .slider {
+    background-color: var(--brand-light);
+}
+
+.theme-switch input:checked + .slider::before {
+    background-color: var(--text-heading);
+    transform: translateX(32px);
+}

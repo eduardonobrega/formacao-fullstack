@@ -1,4 +1,5 @@
-.input-wrapper > label {
+.input-wrapper > label,
+.label {
     display: block;
     margin-bottom: 1.2rem;
     font: var(--body-sm-regular);
@@ -54,70 +55,4 @@ input:required:valid {
 input:not(:placeholder-shown):invalid + .error-message,
 textarea :not(:placeholder-shown):invalid + .error-message {
     display: flex;
-}
-
-.error-message {
-    display: none;
-    color: var(--danger);
-    font: var(--body-xs-regular);
-
-    margin-top: 0.8rem;
-    align-items: center;
-    gap: 0.8rem;
-}
-
-/* Input Tipo */
-.input-type {
-    background-color: var(--shape-body);
-
-    border-radius: 8px;
-    border: 1px solid var(--input-stroke);
-
-    padding: 4px;
-
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4px;
-}
-
-label:has(input:checked) {
-    color: var(--text-heading);
-    background-color: var(--shape-form);
-}
-
-label:has(input:checked) svg path {
-    fill: var(--brand-light);
-}
-
-.input-type label {
-    flex: 1;
-    font: var(--body-sm-regular);
-
-    border-radius: 4px;
-    padding: 1.2rem 1.8rem;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.8rem;
-
-    position: relative;
-    cursor: pointer;
-
-    transition: background-color 0.3s;
-}
-
-.input-type label svg {
-    flex-shrink: 0;
-    width: 1.6rem;
-    height: 1.6rem;
-}
-
-.input-type input {
-    width: 0;
-    height: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
 }

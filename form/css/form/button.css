@@ -1,0 +1,21 @@
+.button {
+    border: none;
+    cursor: pointer;
+    background-color: var(--brand-dark);
+    color: var(--text-heading);
+    font-weight: 600;
+
+    padding: 1.4rem 2rem;
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+
+    transition: filter.3s;
+}
+
+.button:hover,
+.button:focus {
+    filter: brightness(1.2);
+}

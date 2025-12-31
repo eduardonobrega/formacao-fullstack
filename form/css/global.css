@@ -36,6 +36,7 @@ body {
     min-height: 100vh;
     color: var(--text-body);
     background-color: var(--shape-body);
+    padding: 6rem 0;
 }
 
 a {
@@ -45,4 +46,40 @@ a {
 
 ul {
     list-style: none;
+}
+
+.grid {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+aside {
+    background: url(../assets/bg.jpg) no-repeat center;
+    background-size: cover;
+    max-height: 730px;
+    padding: 3.2rem;
+    max-width: 400px;
+}
+
+aside span {
+    font: var(--logo);
+    color: var(--pink);
+
+    display: block;
+    margin: 1.6rem 0 0.8rem;
+}
+
+aside p {
+    font-weight: 300;
+    color: var(--text-heading);
+}
+
+@media (max-width: 900px) {
+    body {
+        padding: 0;
+    }
+    aside {
+        display: none;
+    }
 }

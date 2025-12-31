@@ -1,0 +1,59 @@
+.boxs {
+    margin: 4rem 0;
+    padding-top: 4rem;
+    border-top: 1px solid var(--input-stroke);
+
+    display: grid;
+    gap: 1.6rem;
+}
+
+.boxs a {
+    color: var(--brand-light);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.boxs label {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    position: relative;
+}
+
+.boxs label:focus-within::before {
+    border-color: var(--brand-light);
+}
+
+.boxs label::before {
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    display: inline-block;
+    flex-shrink: 0;
+
+    border: 1px solid var(--input-stroke);
+    border-radius: 4px;
+}
+
+.boxs input {
+    background-color: red;
+
+    top: 0;
+    left: 0;
+
+    opacity: 0;
+
+    margin: 0;
+    position: absolute;
+
+    /*para ele ficar do mesmo tamanho da caixa que criamos*/
+    width: 2rem;
+    height: 2rem;
+}
+
+.boxs label:has(input:checked)::before {
+    border-color: var(--brand-light);
+
+    background: url(../../assets/icons/check.svg) center no-repeat;
+}

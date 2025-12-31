@@ -16,103 +16,292 @@
         <title>Festivite</title>
     </head>
     <body>
-        <div class="form">
-            <h1>Crie seu convite</h1>
-            <form>
-                <fieldset>
-                    <legend>
-                        <img src="./assets/icons/calendar.svg" alt="" />
-                        Sobre o evento
-                    </legend>
+        <div class="grid">
+            <aside>
+                <img src="./assets/icons/logo.svg" alt="Logo" />
+                <span>Festivite</span>
+                <p>Crie um convite digital para o seu evento</p>
+            </aside>
+            <div class="form">
+                <h1>Crie seu convite</h1>
+                <form>
+                    <fieldset>
+                        <legend>
+                            <img src="./assets/icons/calendar.svg" alt="" />
+                            Sobre o evento
+                        </legend>
 
-                    <div class="input-wrapper col-wide">
-                        <label for="title">Título</label>
-                        <input type="text" name="title" id="title" placeholder="Nome do evento " />
-                    </div>
+                        <div class="input-wrapper col-wide">
+                            <label for="title">Título</label>
+                            <input type="text" name="title" id="title" placeholder="Nome do evento " />
+                        </div>
 
-                    <div class="input-wrapper">
-                        <label for="start">Início</label>
-                        <input type="date" name="start" id="start" />
-                    </div>
-                    <div class="input-wrapper">
-                        <label for="end">Fim</label>
-                        <input type="date" name="end" id="end" />
-                    </div>
+                        <div class="input-wrapper">
+                            <label for="start">Início</label>
+                            <input type="date" name="start" id="start" />
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="end">Fim</label>
+                            <input type="date" name="end" id="end" />
+                        </div>
 
-                    <div class="input-wrapper">
-                        <label for="end">Tipo</label>
-                        <div class="input-type">
-                            <label for="in-person">
-                                <input type="radio" name="type" value="in-person" id="in-person"  checked/>
+                        <div class="input-wrapper">
+                            <label for="type">Tipo</label>
+                            <div class="input-type">
+                                <label for="in-person">
+                                    <input type="radio" name="type" value="in-person" id="in-person" checked />
 
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="16"
-                                    height="16"
-                                    viewBox="0 0 16 16"
-                                    fill="none"
-                                >
-                                    <g clip-path="url(#clip0_4104_164)">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        viewBox="0 0 16 16"
+                                        fill="none"
+                                    >
+                                        <g clip-path="url(#clip0_4104_164)">
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M5.33337 1.83331C5.11236 1.83331 4.9004 1.92111 4.74412 2.07739C4.58784 2.23367 4.50004 2.44563 4.50004 2.66665V14.1666H11.5V2.66665C11.5 2.44563 11.4122 2.23367 11.256 2.07739C11.0997 1.92111 10.8877 1.83331 10.6667 1.83331H5.33337ZM12.5 5.49998V2.66665C12.5 2.18042 12.3069 1.7141 11.9631 1.37028C11.6193 1.02647 11.1529 0.833313 10.6667 0.833313H5.33337C4.84714 0.833313 4.38083 1.02647 4.03701 1.37028C3.69319 1.7141 3.50004 2.18042 3.50004 2.66665V7.49998H2.66671C2.18048 7.49998 1.71416 7.69313 1.37034 8.03695C1.02653 8.38077 0.833374 8.84708 0.833374 9.33331V13.3333C0.833374 13.8195 1.02653 14.2859 1.37034 14.6297C1.71416 14.9735 2.18048 15.1666 2.66671 15.1666H13.3334C13.8196 15.1666 14.2859 14.9735 14.6297 14.6297C14.9736 14.2859 15.1667 13.8195 15.1667 13.3333V7.33331C15.1667 6.84708 14.9736 6.38077 14.6297 6.03695C14.2859 5.69313 13.8196 5.49998 13.3334 5.49998H12.5ZM12.5 6.49998V14.1666H13.3334C13.5544 14.1666 13.7663 14.0788 13.9226 13.9226C14.0789 13.7663 14.1667 13.5543 14.1667 13.3333V7.33331C14.1667 7.1123 14.0789 6.90034 13.9226 6.74406C13.7663 6.58778 13.5544 6.49998 13.3334 6.49998H12.5ZM3.50004 8.49998H2.66671C2.44569 8.49998 2.23373 8.58778 2.07745 8.74406C1.92117 8.90034 1.83337 9.1123 1.83337 9.33331V13.3333C1.83337 13.5543 1.92117 13.7663 2.07745 13.9226C2.23373 14.0788 2.44569 14.1666 2.66671 14.1666H3.50004V8.49998ZM6.16671 3.99998C6.16671 3.72384 6.39056 3.49998 6.66671 3.49998H9.33337C9.60952 3.49998 9.83337 3.72384 9.83337 3.99998C9.83337 4.27612 9.60952 4.49998 9.33337 4.49998H6.66671C6.39056 4.49998 6.16671 4.27612 6.16671 3.99998ZM6.16671 6.66665C6.16671 6.3905 6.39056 6.16665 6.66671 6.16665H9.33337C9.60952 6.16665 9.83337 6.3905 9.83337 6.66665C9.83337 6.94279 9.60952 7.16665 9.33337 7.16665H6.66671C6.39056 7.16665 6.16671 6.94279 6.16671 6.66665ZM6.16671 9.33331C6.16671 9.05717 6.39056 8.83331 6.66671 8.83331H9.33337C9.60952 8.83331 9.83337 9.05717 9.83337 9.33331C9.83337 9.60945 9.60952 9.83331 9.33337 9.83331H6.66671C6.39056 9.83331 6.16671 9.60945 6.16671 9.33331ZM6.16671 12C6.16671 11.7238 6.39056 11.5 6.66671 11.5H9.33337C9.60952 11.5 9.83337 11.7238 9.83337 12C9.83337 12.2761 9.60952 12.5 9.33337 12.5H6.66671C6.39056 12.5 6.16671 12.2761 6.16671 12Z"
+                                                fill="#869198"
+                                            />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_4104_164">
+                                                <rect width="16" height="16" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    Presencial
+                                </label>
+
+                                <label for="remote">
+                                    <input type="radio" name="type" value="remote" id="remote" />
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        viewBox="0 0 16 16"
+                                        fill="none"
+                                    >
                                         <path
                                             fill-rule="evenodd"
                                             clip-rule="evenodd"
-                                            d="M5.33337 1.83331C5.11236 1.83331 4.9004 1.92111 4.74412 2.07739C4.58784 2.23367 4.50004 2.44563 4.50004 2.66665V14.1666H11.5V2.66665C11.5 2.44563 11.4122 2.23367 11.256 2.07739C11.0997 1.92111 10.8877 1.83331 10.6667 1.83331H5.33337ZM12.5 5.49998V2.66665C12.5 2.18042 12.3069 1.7141 11.9631 1.37028C11.6193 1.02647 11.1529 0.833313 10.6667 0.833313H5.33337C4.84714 0.833313 4.38083 1.02647 4.03701 1.37028C3.69319 1.7141 3.50004 2.18042 3.50004 2.66665V7.49998H2.66671C2.18048 7.49998 1.71416 7.69313 1.37034 8.03695C1.02653 8.38077 0.833374 8.84708 0.833374 9.33331V13.3333C0.833374 13.8195 1.02653 14.2859 1.37034 14.6297C1.71416 14.9735 2.18048 15.1666 2.66671 15.1666H13.3334C13.8196 15.1666 14.2859 14.9735 14.6297 14.6297C14.9736 14.2859 15.1667 13.8195 15.1667 13.3333V7.33331C15.1667 6.84708 14.9736 6.38077 14.6297 6.03695C14.2859 5.69313 13.8196 5.49998 13.3334 5.49998H12.5ZM12.5 6.49998V14.1666H13.3334C13.5544 14.1666 13.7663 14.0788 13.9226 13.9226C14.0789 13.7663 14.1667 13.5543 14.1667 13.3333V7.33331C14.1667 7.1123 14.0789 6.90034 13.9226 6.74406C13.7663 6.58778 13.5544 6.49998 13.3334 6.49998H12.5ZM3.50004 8.49998H2.66671C2.44569 8.49998 2.23373 8.58778 2.07745 8.74406C1.92117 8.90034 1.83337 9.1123 1.83337 9.33331V13.3333C1.83337 13.5543 1.92117 13.7663 2.07745 13.9226C2.23373 14.0788 2.44569 14.1666 2.66671 14.1666H3.50004V8.49998ZM6.16671 3.99998C6.16671 3.72384 6.39056 3.49998 6.66671 3.49998H9.33337C9.60952 3.49998 9.83337 3.72384 9.83337 3.99998C9.83337 4.27612 9.60952 4.49998 9.33337 4.49998H6.66671C6.39056 4.49998 6.16671 4.27612 6.16671 3.99998ZM6.16671 6.66665C6.16671 6.3905 6.39056 6.16665 6.66671 6.16665H9.33337C9.60952 6.16665 9.83337 6.3905 9.83337 6.66665C9.83337 6.94279 9.60952 7.16665 9.33337 7.16665H6.66671C6.39056 7.16665 6.16671 6.94279 6.16671 6.66665ZM6.16671 9.33331C6.16671 9.05717 6.39056 8.83331 6.66671 8.83331H9.33337C9.60952 8.83331 9.83337 9.05717 9.83337 9.33331C9.83337 9.60945 9.60952 9.83331 9.33337 9.83331H6.66671C6.39056 9.83331 6.16671 9.60945 6.16671 9.33331ZM6.16671 12C6.16671 11.7238 6.39056 11.5 6.66671 11.5H9.33337C9.60952 11.5 9.83337 11.7238 9.83337 12C9.83337 12.2761 9.60952 12.5 9.33337 12.5H6.66671C6.39056 12.5 6.16671 12.2761 6.16671 12Z"
+                                            d="M2.66671 4.5C2.20647 4.5 1.83337 4.8731 1.83337 5.33333V10.6667C1.83337 11.1269 2.20647 11.5 2.66671 11.5H9.33337C9.79361 11.5 10.1667 11.1269 10.1667 10.6667V8.6735C10.1666 8.66864 10.1666 8.66378 10.1667 8.65892V7.00949C10.1666 7.00347 10.1666 6.99746 10.1667 6.99145V5.33333C10.1667 4.8731 9.79361 4.5 9.33337 4.5H2.66671ZM11.1667 6.12939V5.33333C11.1667 4.32081 10.3459 3.5 9.33337 3.5H2.66671C1.65419 3.5 0.833374 4.32081 0.833374 5.33333V10.6667C0.833374 11.6792 1.65419 12.5 2.66671 12.5H9.33337C10.3459 12.5 11.1667 11.6792 11.1667 10.6667V9.60093L13.8717 11.4043C13.9972 11.4878 14.143 11.5357 14.2936 11.5429C14.4441 11.5501 14.5938 11.5163 14.7267 11.4452C14.8596 11.374 14.9707 11.2682 15.0482 11.1389C15.1257 11.0096 15.1666 10.8617 15.1667 10.7109V5.24681C15.1667 5.24677 15.1667 5.24686 15.1667 5.24681C15.1667 5.10024 15.1281 4.9561 15.0547 4.82923C14.9812 4.70231 14.8756 4.59702 14.7485 4.52398C14.6213 4.45094 14.4772 4.41274 14.3305 4.41324C14.1839 4.41374 14.04 4.45291 13.9134 4.52681L11.1667 6.12939ZM11.1667 7.28715V8.39908L14.1667 10.3991V5.53677L11.1667 7.28715Z"
                                             fill="#869198"
                                         />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_4104_164">
-                                            <rect width="16" height="16" fill="white" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                                Presencial
-                            </label>
-
-                            <label for="remote">
-                                <input type="radio" name="type" value="remote" id="remote" />
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="16"
-                                    height="16"
-                                    viewBox="0 0 16 16"
-                                    fill="none"
-                                >
-                                    <path
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
-                                        d="M2.66671 4.5C2.20647 4.5 1.83337 4.8731 1.83337 5.33333V10.6667C1.83337 11.1269 2.20647 11.5 2.66671 11.5H9.33337C9.79361 11.5 10.1667 11.1269 10.1667 10.6667V8.6735C10.1666 8.66864 10.1666 8.66378 10.1667 8.65892V7.00949C10.1666 7.00347 10.1666 6.99746 10.1667 6.99145V5.33333C10.1667 4.8731 9.79361 4.5 9.33337 4.5H2.66671ZM11.1667 6.12939V5.33333C11.1667 4.32081 10.3459 3.5 9.33337 3.5H2.66671C1.65419 3.5 0.833374 4.32081 0.833374 5.33333V10.6667C0.833374 11.6792 1.65419 12.5 2.66671 12.5H9.33337C10.3459 12.5 11.1667 11.6792 11.1667 10.6667V9.60093L13.8717 11.4043C13.9972 11.4878 14.143 11.5357 14.2936 11.5429C14.4441 11.5501 14.5938 11.5163 14.7267 11.4452C14.8596 11.374 14.9707 11.2682 15.0482 11.1389C15.1257 11.0096 15.1666 10.8617 15.1667 10.7109V5.24681C15.1667 5.24677 15.1667 5.24686 15.1667 5.24681C15.1667 5.10024 15.1281 4.9561 15.0547 4.82923C14.9812 4.70231 14.8756 4.59702 14.7485 4.52398C14.6213 4.45094 14.4772 4.41274 14.3305 4.41324C14.1839 4.41374 14.04 4.45291 13.9134 4.52681L11.1667 6.12939ZM11.1667 7.28715V8.39908L14.1667 10.3991V5.53677L11.1667 7.28715Z"
-                                        fill="#869198"
-                                    />
-                                </svg>
-                                Online
-                            </label>
+                                    </svg>
+                                    Online
+                                </label>
+                            </div>
                         </div>
-                    </div>
-                    <div class="input-wrapper">
-                        <label for="address">Local</label>
-                        <input type="text" name="address" id="address" placeholder="Link ou endereço" />
+                        <div class="input-wrapper">
+                            <label for="address">Local</label>
+                            <input type="text" name="address" id="address" placeholder="Link ou endereço" />
+                        </div>
+
+                        <div class="input-wrapper col-wide">
+                            <label for="description">Descrição</label>
+                            <textarea
+                                name="description"
+                                id="description"
+                                placeholder="Escreva sobre os detalhes do evento"
+                            ></textarea>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>
+                            <img src="./assets/icons/paint.svg" alt="" />
+                            Personalização
+                        </legend>
+                        <div class="col-wide">
+                            <label class="label">Cor principal</label>
+                            <ul class="colors">
+                                <li style="background-color: #59b2ff">
+                                    <input type="radio" name="color" id="#59b2ff" value="#59b2ff" />
+                                </li>
+                                <li style="background-color: #6a59ff">
+                                    <input type="radio" name="color" id="#6A59FF" value="#6A59FF" />
+                                </li>
+                                <li style="background-color: #b259ff">
+                                    <input type="radio" name="color" id="#B259FF" value="#B259FF" />
+                                </li>
+
+                                <li style="background-color: #ff59f9">
+                                    <input type="radio" name="color" id="#FF59F9" value="#FF59F9" />
+                                </li>
+                                <li style="background-color: #ff598b">
+                                    <input type="radio" name="color" id="#FF598B" value="#FF598B" />
+                                </li>
+                                <li style="background-color: #ff5959">
+                                    <input type="radio" name="color" id="#FF5959" value="#FF5959" />
+                                </li>
+
+                                <li style="background-color: #ff8b59">
+                                    <input type="radio" name="color" id="#FF8B59" value="#FF8B59" />
+                                </li>
+
+                                <li style="background-color: #ffcd59">
+                                    <input type="radio" name="color" id="#FFCD59" value="#FFCD59" />
+                                </li>
+                                <li style="background-color: #e1ff59">
+                                    <input type="radio" name="color" id="#E1FF59" value="#E1FF59" />
+                                </li>
+                                <li style="background-color: #59ff91">
+                                    <input type="radio" name="color" id="#59FF91" value="#59FF91" />
+                                </li>
+                                <li style="background-color: #59fff9">
+                                    <input type="radio" name="color" id="#59FFF9" value="#59FFF9" />
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-wide">
+                            <label for="" class="label">Tema do evento</label>
+                            <div class="themes">
+                                <label for="birthday" class="theme-item">
+                                    <input type="radio" name="theme" id="birthday" value="birthday" />
+                                    <img src="./assets/image-12.jpg" alt="Aniversário" />
+                                    <span>Aniversário</span>
+                                </label>
+
+                                <label for="kid" class="theme-item">
+                                    <input type="radio" name="theme" id="kid" value="kid" />
+                                    <img src="./assets/image-01.jpg" alt="Infantil" />
+                                    <span>Infantil</span>
+                                </label>
+
+                                <label for="graduation" class="theme-item">
+                                    <input type="radio" name="theme" id="graduation" value="graduation" />
+                                    <img src="./assets/image-02.jpg" alt="graduation" />
+                                    <span>Formatura</span>
+                                </label>
+
+                                <label for="marriage" class="theme-item">
+                                    <input type="radio" name="theme" id="marriage" value="marriage" />
+                                    <img src="./assets/image-03.jpg" alt="Casamento" />
+                                    <span>Casamento</span>
+                                </label>
+                                <label for="baby-shower" class="theme-item">
+                                    <input type="radio" name="theme" id="baby-shower" value="baby-shower" />
+                                    <img src="./assets/image-04.jpg" alt="Chá de bebê" />
+                                    <span>Chá de bebê</span>
+                                </label>
+
+                                <label for="bridal-shower" class="theme-item">
+                                    <input type="radio" name="theme" id="bridal-shower" value="bridal-shower" />
+                                    <img src="./assets/image-05.jpg" alt="Chá de panela" />
+                                    <span>Chá de panela</span>
+                                </label>
+
+                                <label for="carnival" class="theme-item">
+                                    <input type="radio" name="theme" id="carnival" value="carnival" />
+                                    <img src="./assets/image-06.jpg" alt="Carnaval" />
+                                    <span>Carnaval</span>
+                                </label>
+
+                                <label for="easter" class="theme-item">
+                                    <input type="radio" name="theme" id="easter" value="easter" />
+                                    <img src="./assets/image-07.jpg" alt="Páscoa" />
+                                    <span>Páscoa</span>
+                                </label>
+
+                                <label for="saint-john" class="theme-item">
+                                    <input type="radio" name="theme" id="saint-john" value="saint-john" />
+                                    <img src="./assets/image-08.jpg" alt="São João" />
+                                    <span>São João</span>
+                                </label>
+
+                                <label for="halloween" class="theme-item">
+                                    <input type="radio" name="theme" id="halloween" value="halloween" />
+                                    <img src="./assets/image-09.jpg" alt="Halloween" />
+                                    <span>Halloween</span>
+                                </label>
+
+                                <label for="christmas" class="theme-item">
+                                    <input type="radio" name="theme" id="christmas" value="christmas" />
+                                    <img src="./assets/image-10.jpg" alt="Natal" />
+                                    <span>Natal</span>
+                                </label>
+
+                                <label for="other" class="theme-item">
+                                    <input type="radio" name="theme" id="other" value="other" />
+                                    <img src="./assets/image-11.jpg" alt="Outro tema" />
+                                    <span>Outro</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col-wide style-cover">
+                            <div>
+                                <label for="" class="label">Estilo</label>
+                                <label class="theme-switch">
+                                    <input type="checkbox" id="toggle-theme" />
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+                            <div>
+                                <label for="" class="label">Foto de capa</label>
+                                <label class="file-upload" for="file">
+                                    <div>
+                                        <input type="file" id="file" />
+                                        <img src="./assets/icons/upload.svg" alt="" />
+                                        Selecionar
+                                    </div>
+                                    <span class="file-name">Nenhum arquivo selecionado</span>
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>
+                            <img src="./assets/icons/contact.svg" alt="" />
+                            Dados para contato
+                        </legend>
+                        <div class="input-wrapper col-wide">
+                            <label for="name">Nome</label>
+                            <input type="text" name="name" id="name" placeholder="Nome completo" />
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email" placeholder="exemplo@email.com" />
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="tel">Telefone</label>
+                            <input type="tel" name="tel" id="tel" placeholder="(99) 99999-9999" />
+                        </div>
+                    </fieldset>
+
+                    <div class="boxs">
+                        <label for="terms" class="label">
+                            <input type="checkbox" name="terms" id="terms" />
+                            <span>
+                                Li e concordo com os
+                                <a href="#">Termos e Condições</a>
+                                e com a
+                                <a href="#">Política de Privacidade</a>
+                            </span>
+                        </label>
+
+                        <label for="emails" class="label">
+                            <input type="checkbox" name="emails" id="emails" />
+                            Aceito receber atualizações e promoções por e-mail
+                        </label>
+
+                        <label for="sms" class="label">
+                            <input type="checkbox" name="sms" id="sms" />
+                            Aceito receber atualizações e promoções por SMS
+                        </label>
                     </div>
 
-                    <div class="input-wrapper col-wide">
-                        <label for="description">Descrição</label>
-                        <textarea
-                            name="description"
-                            id="description"
-                            placeholder="Escreva sobre os detalhes do evento"
-                        ></textarea>
-                    </div>
-                </fieldset>
-            </form>
+                    <button class="button">
+                        <img src="./assets/icons/ticket.svg" alt="" />
+                        Gerar convite
+                    </button>
+                </form>
+            </div>
         </div>
-
-        <!-- <div class="input-wrapper">
-            <label for="test">Label</label>
-            <textarea name="" id="" placeholder="sds"></textarea>
-            <span class="error-message">
-                <img src="./assets/icons/circle-alert.svg" alt="" />
-                Error message
-            </span>
-        </div> -->
     </body>
 </html>
