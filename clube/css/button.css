@@ -1,0 +1,24 @@
+.button {
+    font: var(--button);
+    padding: 1.2rem 2rem;
+    color: var(--text-title);
+
+    background-color: var(--pink-dark);
+    border-radius: 8px;
+
+    transition: background-color 0.3s;
+}
+
+.button:hover,
+.button:focus {
+    background-color: var(--pink-base);
+}
+
+.button.secondary {
+    background-color: var(--blue-dark);
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
+    background-color: var(--blue-mid);
+}

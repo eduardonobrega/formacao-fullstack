@@ -32,6 +32,7 @@ textarea {
 
 body {
     min-height: 100vh;
+    background-color: var(--shape-background);
 }
 
 a {
