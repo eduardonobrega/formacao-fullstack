@@ -27,7 +27,7 @@
     --font-family: "Raleway", "Arial", sans-serif;
 
     /* Titles */
-    --title-lg: 700 4.8rem / normal var(--font-family);
+    --title-lg: 700 clamp(2.8rem, 1.5692rem + 3.8462vw, 4.8rem) / normal var(--font-family);
     --title-md: 700 4rem / normal var(--font-family);
     --title-sm: 700 3.2rem / normal var(--font-family);
     --title-xs: 700 1.6rem / normal var(--font-family);

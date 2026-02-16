@@ -32,7 +32,9 @@ textarea {
 
 body {
     min-height: 100vh;
-    background-color: var(--shape-background);
+    background: var(--shape-background) url('../assets/book-bg.png') no-repeat top center;
+    background-size: contain;
+    color: var(--text-body);
 }
 
 a {

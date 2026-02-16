@@ -1,0 +1,23 @@
+.hero {
+    text-align: center;
+}
+
+.hero h1 {
+    font: var(--title-lg);
+    color: var(--text-title);
+    max-width: 22ch;
+    margin: 12rem auto 0;
+}
+
+.hero p {
+    max-width: 42ch;
+    margin: 3.2rem auto 0;
+    font: var(--body-lg);
+}
+
+.text p {
+    font: var(--subtitle);
+    text-align: center;
+    margin: 0 auto;
+    
+}
