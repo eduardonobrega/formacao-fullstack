@@ -1,0 +1,73 @@
+:root {
+    font-size: 62.5%;
+
+    /* Backgrounds */
+    --background-primary: #f4f5fb;
+    --background-secondary: #ffffff;
+
+    /* Brand Colors */
+    --color-brand: #ca3884;
+    --color-brand-hover: #a52c6b;
+    --color-danger: #c93847;
+
+    /* Content (Typography) */
+    --content-primary: #080b12;
+    --content-secondary: #374151;
+    --content-tertiary: #9ca3af;
+    --always-white: #ffffff;
+
+    /* Borders */
+    --border-primary: #d1d5db;
+    --border-hover: #b9c2d0;
+
+    /* Font Family Base */
+    --font-inter: "Inter", "Arial", sans-serif;
+
+    /* Variáveis de Tipografia */
+    --font-title: 700 2.4rem/1.33 var(--font-inter);
+    --font-label: 600 1.6rem/1.25 var(--font-inter);
+    --font-paragraph: 500 1.6rem/1.25 var(--font-inter);
+    --font-link: 500 1.4rem/1.14 var(--font-inter);
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+body,
+input,
+button,
+textarea {
+    font: 400 1.6rem var(--font-inter);
+
+    font-optical-sizing: auto;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    min-height: 100vh;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
