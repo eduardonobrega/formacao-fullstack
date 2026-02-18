@@ -1,0 +1,48 @@
+form {
+    display: flex;
+    padding: 4rem 0;
+    gap: 1.6rem;
+}
+
+form input {
+    flex: 1;
+    padding: 1rem 1.6rem;
+    border-radius: 12px;
+    border: 2px solid var(--border-primary);
+    background-color: var(--background-secondary);
+    width: 100%;
+}
+
+form input:hover {
+    border-color: var(--border-hover);
+}
+
+form input:focus {
+    outline: none;
+    border-color: var(--color-brand);
+}
+
+form button {
+    background-color: var(--color-brand);
+    color: var(--always-white);
+    font: var(--font-label);
+
+    padding: 1.2rem 2.4rem;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+
+    transition: background-color 0.3s;
+}
+
+form button:hover,
+form button:focus {
+    background-color: var(--color-brand-hover);
+}
+
+
+@media (max-width: 400px) {
+    form {
+        flex-direction: column;
+    }
+}

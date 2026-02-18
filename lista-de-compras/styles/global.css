@@ -1,0 +1,66 @@
+:root {
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+body,
+input,
+button,
+textarea {
+    font: 400 1.6rem var(--font-inter);
+
+    font-optical-sizing: auto;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--background-primary);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: min(95%, 800px);
+    margin: 0 auto;
+}
+
+::placeholder {
+    color: var(--content-tertiary);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0 6rem;
+}
+
+h1 {
+    font: var(--font-title);
+}

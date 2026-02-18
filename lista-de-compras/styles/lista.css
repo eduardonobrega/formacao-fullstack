@@ -1,0 +1,98 @@
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding-bottom: 4rem;
+}
+
+ul li {
+    font: var(--font-paragraph);
+    color: var(--content-secondary);
+    background-color: var(--background-secondary);
+    border: 1px solid var(--background-secondary);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 1.2rem;
+    min-height: 5rem;
+
+    display: flex;
+
+    transition: transform 0.3s;
+}
+
+ul label {
+    padding: 0.8rem 1.2rem;
+
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+
+    position: relative;
+    cursor: pointer;
+}
+
+ul label input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+ul label::before {
+    content: "";
+    border-radius: 6px;
+    border: 1px solid var(--border-primary);
+
+    display: block;
+    width: 1.6rem;
+    height: 1.6rem;
+    flex-shrink: 0;
+}
+
+/* Item com foco */
+ul li:focus-within {
+    transform: scale(1.05);
+    border-color: var(--color-brand);
+}
+
+ul li:has(button:focus) {
+    border-color: var(--color-danger);
+    outline: 1px solid var(--color-danger);
+}
+ul label:focus-within::before {
+    border-color: var(--color-brand);
+}
+
+/* Item marcado */
+ul li:has(input:checked) {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+ul li:has(input:checked) label::before {
+    /* colocado no input */
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.5 7L4.25 8.75L9.5 3.25' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--color-brand);
+    border-color: var(--color-brand);
+}
+
+ul button {
+    cursor: pointer;
+    padding: 0 0.8rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+ul button:hover svg path,
+ul button:focus svg path {
+    stroke: var(--color-danger);
+    transform: scale(1.05);
+}
