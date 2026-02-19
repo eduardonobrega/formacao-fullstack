@@ -64,3 +64,53 @@ header {
 h1 {
     font: var(--font-title);
 }
+
+main > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-sort {
+    /* Tipografia que você definiu */
+    font: var(--font-label);
+
+    /* Cores e Fundo */
+    background-color: var(--background-secondary);
+    color: var(--content-secondary);
+    border: 1px solid var(--border-primary);
+
+    /* Espaçamento e Forma */
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 8px;
+
+    /* Interação */
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    /* A sombra suave que criamos anteriormente */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Efeito de passar o mouse */
+.btn-sort:hover {
+    border-color: var(--color-brand);
+    color: var(--color-brand);
+    background-color: var(--background-primary);
+}
+
+/* Efeito de clique (feedback visual) */
+.btn-sort:active {
+    transform: scale(0.96);
+    background-color: var(--border-primary);
+}
+
+/* Variante para quando o filtro estiver ativo */
+.btn-sort.active {
+    background-color: var(--color-brand);
+    color: var(--always-white);
+    border-color: var(--color-brand-hover);
+}

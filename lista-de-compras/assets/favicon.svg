@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Fundo -->
+  <rect width="100" height="100" rx="22" fill="#0f172a"/>
+
+  <!-- Linha de destaque -->
+  <rect x="15" y="75" width="70" height="6" rx="3" fill="#3b82f6"/>
+
+  <!-- Texto -->
+  <text x="50%" y="48%" text-anchor="middle" dominant-baseline="central"
+        font-family="Inter, Arial, Helvetica, sans-serif"
+        font-size="42"
+        fill="white"
+        font-weight="600"
+        letter-spacing="2">
+    EN
+  </text>
+</svg>

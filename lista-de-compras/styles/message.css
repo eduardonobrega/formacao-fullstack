@@ -11,10 +11,21 @@
 
     font: var(--font-label);
     color: var(--always-white);
+
+    position: fixed;
+    bottom: 4rem;
+    left: 0;
+    right: 0;
+
+    display: none;
 }
 
 .message button {
     border: none;
     background-color: transparent;
     cursor: pointer;
+}
+
+.message.show {
+    display: grid;
 }
